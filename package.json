@@ -1,0 +1,60 @@
+{
+  "name": "yurikong.github.io",
+  "version": "0.1.0",
+  "description": "yurikong.github.io",
+  "keywords": [
+    "yurikong",
+    "github.io",
+    "yurikong.github.io"
+  ],
+  "homepage": "https://github.com/yurikong/yurikong.github.io#readme",
+  "bugs": "jackdu2013@163.com",
+  "license": "MIT",
+  "author": "Jianqiang Du <jackdu2013@163.com> (https://github.com/yurikong)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yurikong/yurikong.github.io.git"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "inspect": "vue-cli-service inspect > inspect.js && gsed -i '1c \\/* eslint-disable */\\nconst config = {' inspect.js",
+    "test:unit": "vue-cli-service test:unit",
+    "test:ci": "yarn lint && yarn test:unit",
+    "test:e2e": "vue-cli-service test:e2e",
+    "publish": "git checkout main && git merge dev && git push && git checkout dev"
+  },
+  "dependencies": {
+    "core-js": "^3.8.3",
+    "normalize.css": "^8.0.1",
+    "vue": "^3.2.13",
+    "vue-router": "^4.0.3",
+    "vuex": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-e2e-cypress": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-unit-jest": "~5.0.0",
+    "@vue/cli-plugin-vuex": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "@vue/test-utils": "^2.0.0-0",
+    "@vue/vue3-jest": "^27.0.0-alpha.1",
+    "babel-jest": "^27.0.6",
+    "cypress": "^9.7.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "jest": "^27.0.5",
+    "prettier": "^2.4.1",
+    "sass": "^1.32.7",
+    "sass-loader": "^12.0.0",
+    "vue-eslint-parser": "^9.0.2"
+  }
+}
