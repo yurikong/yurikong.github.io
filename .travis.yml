@@ -1,37 +1,37 @@
-# language: node_js
-# node_js: node
+language: node_js
+node_js: node
 
-# os: linux
-# arch: amd64
-# dist: focal
+os: linux
+arch: amd64
+dist: focal
 
-# cache:
-#   apt: true
-#   yarn: true
+cache:
+  apt: true
+  yarn: true
 
-# branches: main
+branches: main
 
-# addons:
-#   apt:
-#     update: true
+addons:
+  apt:
+    update: true
 
-# git:
-#   strategy: clone
-#   quiet: true
-#   autocrlf: input
-#   depth: false
-#   symlinks: true
+git:
+  strategy: clone
+  quiet: true
+  autocrlf: input
+  depth: false
+  symlinks: true
 
-# script:
-#   - yarn build
+script:
+  - yarn build
 
-# deploy:
-#   strategy: git
-#   provider: pages
-#   edge: true
-#   cleanup: false
-#   token: $GITHUB_TOKEN
-#   keep_history: true
-#   local_dir: dist
-#   on:
-#     branch: main
+deploy:
+  strategy: git
+  provider: pages
+  edge: true
+  cleanup: false
+  token: $GITHUB_TOKEN
+  keep_history: true
+  local_dir: dist
+  on:
+    branch: main
