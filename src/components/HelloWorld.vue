@@ -1,12 +1,1 @@
-<template>
-  {{ msg }}
-</template>
-
-<script setup>
-defineProps({
-  msg: {
-    type: String,
-    default: "",
-  },
-})
-</script>
+<template>Hello World</template>
