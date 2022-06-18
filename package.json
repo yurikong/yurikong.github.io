@@ -24,7 +24,7 @@
     "test:unit": "vue-cli-service test:unit",
     "test:ci": "yarn lint && yarn test:unit",
     "test:e2e": "vue-cli-service test:e2e",
-    "publish": "git checkout main && git merge dev && git push && git checkout dev"
+    "pub": "git checkout main && git merge dev && git push && git checkout dev"
   },
   "dependencies": {
     "core-js": "^3.8.3",
