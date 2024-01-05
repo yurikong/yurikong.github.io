@@ -13,6 +13,7 @@ module.exports = {
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
     'plugin:jsx-a11y/strict',
+    'plugin:regexp/recommended',
     'plugin:prettier/recommended',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
@@ -26,7 +27,7 @@ module.exports = {
     },
     sourceType: 'module',
   },
-  plugins: ['@typescript-eslint', 'react-refresh', 'jsx-a11y'],
+  plugins: ['@typescript-eslint', 'react-refresh', 'jsx-a11y', 'regexp'],
   rules: {
     'react-refresh/only-export-components': [
       'warn',
