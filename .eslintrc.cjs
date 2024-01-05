@@ -6,19 +6,25 @@ module.exports = {
     node: true,
   },
   extends: [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/strict-type-checked",
-    "plugin:@typescript-eslint/stylistic-type-checked",
-    "plugin:react-hooks/recommended",
+    'eslint:recommended',
+    'plugin:@typescript-eslint/strict-type-checked',
+    'plugin:@typescript-eslint/stylistic-type-checked',
+    'plugin:react-hooks/recommended',
+    'plugin:prettier/recommended',
   ],
-  ignorePatterns: ["dist", ".eslintrc.cjs"],
-  parser: "@typescript-eslint/parser",
+  ignorePatterns: ['dist', '.eslintrc.cjs'],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     project: true,
     tsconfigRootDir: __dirname,
+    ecmaVersion: 'latest',
+    sourceType: 'module',
   },
-  plugins: ["@typescript-eslint", "react-refresh"],
+  plugins: ['@typescript-eslint', 'react-refresh'],
   rules: {
-    "react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
+    'react-refresh/only-export-components': [
+      'warn',
+      { allowConstantExport: true },
+    ],
   },
 }
