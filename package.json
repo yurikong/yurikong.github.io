@@ -2,6 +2,24 @@
   "name": "yurikong.github.io",
   "private": true,
   "version": "0.0.0",
+  "description": "My personal website",
+  "keywords": [
+    "typescript",
+    "react",
+    "jsx",
+    "html",
+    "css"
+  ],
+  "homepage": "https://github.com/yurikong/yurikong.github.io#readme",
+  "bugs": {
+    "url": "https://github.com/yurikong/yurikong.github.io/issues",
+    "email": "jackdu2013@163.com"
+  },
+  "author": "Jianqiang Du <jackdu2013@163.com> (https://yurikong.github.io)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yurikong/yurikong.github.io.git"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
