@@ -9,6 +9,8 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/strict-type-checked',
     'plugin:@typescript-eslint/stylistic-type-checked',
+    'plugin:react/recommended',
+    'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
     'plugin:prettier/recommended',
   ],
@@ -18,6 +20,9 @@ module.exports = {
     project: true,
     tsconfigRootDir: __dirname,
     ecmaVersion: 'latest',
+    ecmaFeatures: {
+      jsx: true,
+    },
     sourceType: 'module',
   },
   plugins: ['@typescript-eslint', 'react-refresh'],
