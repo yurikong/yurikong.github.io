@@ -15,6 +15,7 @@ module.exports = {
     'plugin:jsx-a11y/strict',
     'plugin:regexp/recommended',
     'plugin:promise/recommended',
+    'plugin:jsdoc/recommended',
     'plugin:prettier/recommended',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
@@ -34,6 +35,7 @@ module.exports = {
     'jsx-a11y',
     'regexp',
     'promise',
+    'jsdoc',
   ],
   rules: {
     'react-refresh/only-export-components': [
