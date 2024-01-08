@@ -18,7 +18,7 @@ module.exports = {
     'plugin:jsdoc/recommended',
     'plugin:prettier/recommended',
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs'],
+  ignorePatterns: ['dist'],
   settings: {
     react: {
       version: 'detect',
@@ -26,7 +26,7 @@ module.exports = {
   },
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: true,
+    project: ['tsconfig.json', 'tsconfig.node.json'],
     tsconfigRootDir: __dirname,
     ecmaVersion: 'latest',
     ecmaFeatures: {
