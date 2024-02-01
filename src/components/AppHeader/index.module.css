@@ -1,0 +1,19 @@
+.app-header {
+  --height: clamp(40px, 8dvh, 60px);
+
+  display: flex;
+  max-width: var(--max-content-width);
+  height: var(--height);
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.app-header > .app-logo {
+  --padding: clamp(var(--gap-8), 1.5vw, var(--gap-20));
+
+  padding: 0 var(--padding);
+  font-weight: bold;
+  line-height: var(--height);
+  text-align: center;
+  text-transform: uppercase;
+}

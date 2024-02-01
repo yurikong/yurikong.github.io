@@ -1,5 +1,23 @@
+@import url('reset.css');
+
 :root {
-  --placeholder: none;
+  /* responsive breakpoints */
+  --breakpoint-xs: 480px;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+
+  /* common gaps */
+  --gap-4: 0.4rem;
+  --gap-8: 0.8rem;
+  --gap-12: 1.2rem;
+  --gap-16: 1.6rem;
+  --gap-20: 2rem;
+  --gap-24: 2.4rem;
+
+  /* restrictions */
+  --max-content-width: 1200px;
 }
 
 *,
@@ -27,20 +45,21 @@ html {
     'Apple Color Emoji',
     'Segoe UI Emoji',
     'Segoe UI Symbol';
-  font-size: 100px;
+  font-size: 62.5%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
   line-height: 1.5;
+  -webkit-tap-highlight-color: transparent;
   text-rendering: optimizelegibility;
 }
 
 html,
 body,
 #root {
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 body {
-  font-size: 0.16rem;
+  font-size: 1.4rem;
 }

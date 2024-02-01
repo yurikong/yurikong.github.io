@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import App from '@/App.tsx'
 import 'normalize.css'
 import '@/styles/index.css'
-import App from '@/App.tsx'
 
 const rootEl: HTMLElement = document.getElementById('root')!
 
