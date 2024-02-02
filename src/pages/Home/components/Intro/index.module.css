@@ -1,7 +1,10 @@
 .intro {
+  --padding-top: 25dvh;
+  --padding-bottom: 15dvh;
+
   position: relative;
   height: 100dvh;
-  padding-block: 25dvh 10dvh;
+  padding-block: var(--padding-top) var(--padding-bottom);
   padding-inline: var(--padding);
 }
 
@@ -17,7 +20,7 @@
 
 .more {
   position: absolute;
-  bottom: 10dvh;
+  bottom: var(--padding-bottom);
   left: 50dvw;
   transform: translateX(-50%) translateY(100%);
 }
