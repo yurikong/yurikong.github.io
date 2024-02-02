@@ -18,6 +18,9 @@
 
   /* restrictions */
   --max-content-width: 1200px;
+
+  /* others */
+  --padding: clamp(var(--gap-8), 1.5vw, var(--gap-20));
 }
 
 *,

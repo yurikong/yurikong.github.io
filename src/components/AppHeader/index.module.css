@@ -1,19 +1,29 @@
 .app-header {
-  --height: clamp(40px, 8dvh, 60px);
+  --h: clamp(40px, 8dvh, 60px); /* height */
 
   display: flex;
   max-width: var(--max-content-width);
-  height: var(--height);
+  height: var(--h);
   align-items: stretch;
   justify-content: space-between;
 }
 
-.app-header > .app-logo {
-  --padding: clamp(var(--gap-8), 1.5vw, var(--gap-20));
-
-  padding: 0 var(--padding);
+.app-header > .logo {
   font-weight: bold;
-  line-height: var(--height);
+  line-height: var(--h);
+  padding-inline: var(--padding);
   text-align: center;
   text-transform: uppercase;
+}
+
+.app-header > .menu-btn {
+  display: flex;
+  height: var(--h);
+  align-items: center;
+  justify-content: center;
+  padding-inline: var(--padding);
+}
+
+.app-header > .menu-btn > .menu-icon {
+  font-size: 2rem;
 }
