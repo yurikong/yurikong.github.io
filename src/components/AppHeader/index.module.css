@@ -1,4 +1,4 @@
-.app-header {
+.header {
   --h: clamp(40px, 8dvh, 60px); /* height */
 
   display: flex;
@@ -8,7 +8,7 @@
   justify-content: space-between;
 }
 
-.app-header > .logo {
+.logo {
   font-weight: bold;
   line-height: var(--h);
   padding-inline: var(--padding);
@@ -16,7 +16,7 @@
   text-transform: uppercase;
 }
 
-.app-header > .menu-btn {
+.menu-btn {
   display: flex;
   height: var(--h);
   align-items: center;
@@ -24,6 +24,6 @@
   padding-inline: var(--padding);
 }
 
-.app-header > .menu-btn > .menu-icon {
+.menu-icon {
   font-size: 2rem;
 }

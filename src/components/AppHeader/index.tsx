@@ -18,7 +18,7 @@ export default function AppHeader(): JSX.Element {
   // ]
 
   return (
-    <header className={style['app-header']}>
+    <header className={style['header']}>
       {/* Logo */}
       <Link className={style['logo']} to='/'>
         Jack
