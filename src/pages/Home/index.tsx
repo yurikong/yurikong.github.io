@@ -1,10 +1,16 @@
 import type { JSX } from 'react'
+import { Highlight, Intro } from './components'
 
 /**
- * @returns {JSX.Element} the HomePage component
+ * @returns {JSX.Element} Home page
  */
 export function Component(): JSX.Element {
-  return <div>Home Page</div>
+  return (
+    <>
+      <Intro />
+      <Highlight />
+    </>
+  )
 }
 
-Component.displayName = 'HomePage'
+Component.displayName = 'Home'

@@ -1,6 +1,5 @@
 import type { JSX } from 'react'
 import { Outlet } from 'react-router-dom'
-import style from './index.module.css'
 import { AppHeader, AppFooter } from '@/components'
 
 /**
@@ -8,7 +7,7 @@ import { AppHeader, AppFooter } from '@/components'
  */
 export default function AppLayout(): JSX.Element {
   return (
-    <div className={style['app-layout']}>
+    <>
       <AppHeader />
 
       <main>
@@ -16,6 +15,6 @@ export default function AppLayout(): JSX.Element {
       </main>
 
       <AppFooter />
-    </div>
+    </>
   )
 }

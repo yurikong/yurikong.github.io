@@ -1,6 +1,12 @@
 @import url('reset.css');
 
 :root {
+  /* colors */
+  --text-primary: #333;
+  --text-secondary: #666;
+  --black: #000;
+  --white: #fff;
+
   /* responsive breakpoints */
   --breakpoint-xs: 480px;
   --breakpoint-sm: 576px;
@@ -15,12 +21,14 @@
   --gap-16: 1.6rem;
   --gap-20: 2rem;
   --gap-24: 2.4rem;
+  --gap-28: 2.8rem;
+  --gap-32: 3.2rem;
 
   /* restrictions */
   --max-content-width: 1200px;
 
   /* others */
-  --padding: clamp(var(--gap-8), 1.5vw, var(--gap-20));
+  --padding: clamp(var(--gap-16), 1.5vw, var(--gap-32));
 }
 
 *,
@@ -65,4 +73,8 @@ body,
 
 body {
   font-size: 1.4rem;
+}
+
+#root {
+  background-color: var(--white);
 }
