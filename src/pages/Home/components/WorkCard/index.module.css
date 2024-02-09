@@ -1,0 +1,30 @@
+.work-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  gap: var(--gap-4);
+}
+
+.years {
+  display: flex;
+  align-items: center;
+  color: var(--text-tertiary);
+  font-size: 1.2rem;
+  font-weight: bold;
+  gap: var(--gap-4);
+  text-transform: uppercase;
+}
+
+.position {
+  display: flex;
+  align-items: center;
+  color: var(--text-secondary);
+  font-size: 1.6rem;
+  font-weight: bold;
+  gap: var(--gap-4);
+  text-transform: capitalize;
+}
+
+.responsibility {
+  color: var(--text-tertiary);
+}

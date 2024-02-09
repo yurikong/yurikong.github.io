@@ -4,6 +4,7 @@
   /* colors */
   --text-primary: #333;
   --text-secondary: #666;
+  --text-tertiary: #999;
   --black: #000;
   --white: #fff;
 
@@ -28,7 +29,7 @@
   --max-content-width: 1200px;
 
   /* others */
-  --padding: clamp(var(--gap-16), 1.5vw, var(--gap-32));
+  --padding-inline: clamp(var(--gap-16), 1.5vw, var(--gap-32));
 }
 
 *,
@@ -72,6 +73,7 @@ body,
 }
 
 body {
+  color: var(--text-secondary);
   font-size: 1.4rem;
 }
 

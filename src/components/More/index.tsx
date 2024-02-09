@@ -19,7 +19,7 @@ export default function More({ className }: Props): JSX.Element {
   return (
     <div className={`${style['more']} ${className}`}>
       <div className={style['text']}>More</div>
-      <RiArrowDownDoubleLine />
+      <RiArrowDownDoubleLine className={style['icon']} />
     </div>
   )
 }

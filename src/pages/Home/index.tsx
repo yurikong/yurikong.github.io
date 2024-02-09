@@ -1,5 +1,5 @@
 import type { JSX } from 'react'
-import { Highlight, Intro } from './components'
+import { Work, Intro } from './components'
 
 /**
  * @returns {JSX.Element} Home page
@@ -8,9 +8,9 @@ export function Component(): JSX.Element {
   return (
     <>
       <Intro />
-      <Highlight />
+      <Work />
     </>
   )
 }
 
-Component.displayName = 'Home'
+Component.displayName = 'HomePage'

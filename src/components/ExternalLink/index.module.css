@@ -1,0 +1,8 @@
+.external-link {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--text-secondary);
+  border-bottom-style: dotted;
+  gap: var(--gap-4);
+  text-transform: capitalize;
+}

@@ -5,7 +5,7 @@
   position: relative;
   height: 100dvh;
   padding-block: var(--padding-top) var(--padding-bottom);
-  padding-inline: var(--padding);
+  padding-inline: var(--padding-inline);
 }
 
 .greeting {
@@ -14,7 +14,6 @@
 }
 
 .who-am-i {
-  color: var(--text-secondary);
   font-weight: normal;
 }
 

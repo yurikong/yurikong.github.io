@@ -1,0 +1,12 @@
+.work {
+  min-height: 100dvh;
+  border: 1px solid blue;
+  padding-block: 1.8rem;
+  padding-inline: var(--padding-inline);
+}
+
+.title {
+  color: var(--text-primary);
+  font-size: 1.8rem;
+  font-weight: bold;
+}

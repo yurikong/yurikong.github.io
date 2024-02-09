@@ -1,2 +1,6 @@
 export { default as Intro } from './Intro'
-export { default as Highlight } from './Highlight'
+export { default as Work } from './Work'
+export { default as WorkCard } from './WorkCard'
+export { default as WorkCardJobYears } from './WorkCardJobYears'
+export { default as WorkCardJobPosition } from './WorkCardJobPosition'
+export { default as WorkCardJobResponsibility } from './WorkCardJobResponsibility'
