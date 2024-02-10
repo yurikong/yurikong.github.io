@@ -7,7 +7,7 @@ import style from './index.module.css'
  * 工作卡片列表
  * @returns {JSX.Element} the `WorkCards` component
  */
-export default function WorkCards(): JSX.Element {
+export const WorkCards = (): JSX.Element => {
   const workCardList: WorkCardProps[] = [
     {
       jobYears: {

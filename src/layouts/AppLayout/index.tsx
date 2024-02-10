@@ -5,7 +5,7 @@ import { AppHeader, AppFooter } from '@/components'
 /**
  * @returns {JSX.Element} the AppLayout component
  */
-export default function AppLayout(): JSX.Element {
+export const AppLayout = (): JSX.Element => {
   return (
     <>
       <AppHeader />

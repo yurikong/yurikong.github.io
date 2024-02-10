@@ -8,9 +8,9 @@ import style from './index.module.css'
  * @param {WorkCardJobResponsibilityProps['responsibility']} props.responsibility responsibility
  * @returns {JSX.Element} the `WorkCardJobResponsibility` component
  */
-export default function WorkCardJobResponsibility({
+export const WorkCardJobResponsibility = ({
   responsibility,
-}: WorkCardJobResponsibilityProps): JSX.Element {
+}: WorkCardJobResponsibilityProps): JSX.Element => {
   return (
     <p className={style['work-card-job-responsibility']}>{responsibility}</p>
   )

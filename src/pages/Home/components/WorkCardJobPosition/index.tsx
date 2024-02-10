@@ -10,10 +10,10 @@ import style from './index.module.css'
  * @param {WorkCardJobPositionProps['externalLinkProps']} props.externalLinkProps `ExternalLink` component props
  * @returns {JSX.Element} the `WorkCardJobPosition` component
  */
-export default function WorkCardJobPosition({
+export const WorkCardJobPosition = ({
   jobTitle,
   externalLinkProps,
-}: WorkCardJobPositionProps): JSX.Element {
+}: WorkCardJobPositionProps): JSX.Element => {
   return (
     <div className={style['work-card-job-position']}>
       <span>{jobTitle}</span>

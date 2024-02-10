@@ -5,7 +5,7 @@ import style from './index.module.css'
 /**
  * @returns {JSX.Element} the `Intro` component
  */
-export default function Intro(): JSX.Element {
+export const Intro = (): JSX.Element => {
   return (
     <section className={style['intro']}>
       <h1>Hi, I&apos;m Jack!</h1>

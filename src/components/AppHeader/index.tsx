@@ -6,7 +6,7 @@ import style from './index.module.css'
 /**
  * @returns {JSX.Element} the AppHeader component
  */
-export default function AppHeader(): JSX.Element {
+export const AppHeader = (): JSX.Element => {
   return (
     <header className={style['header']}>
       {/* Logo */}

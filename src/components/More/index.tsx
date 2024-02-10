@@ -9,7 +9,7 @@ import style from './index.module.css'
  * @param {MoreProps['className']} props.className class applied by parent
  * @returns {JSX.Element} the `More` component
  */
-export default function More({ className }: MoreProps): JSX.Element {
+export const More = ({ className }: MoreProps): JSX.Element => {
   const divClassName = `${style['more']} ${className ?? ''}`.trim()
 
   return (

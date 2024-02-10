@@ -1,4 +1,4 @@
-export { default as AppHeader } from './AppHeader'
-export { default as AppFooter } from './AppFooter'
-export { default as ExternalLink } from './ExternalLink'
-export { default as More } from './More'
+export { AppHeader } from './AppHeader'
+export { AppFooter } from './AppFooter'
+export { ExternalLink } from './ExternalLink'
+export { More } from './More'

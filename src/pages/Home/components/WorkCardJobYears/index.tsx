@@ -10,10 +10,10 @@ import type { WorkCardJobYearsProps } from './types'
  * @param {WorkCardJobYearsProps['endYear']} [props.endYear] end year, default is `undefined`
  * @returns {JSX.Element} the `WorkCardJobYears` component
  */
-export default function WorkCardJobYears({
+export const WorkCardJobYears = ({
   startYear,
   endYear = undefined,
-}: WorkCardJobYearsProps): JSX.Element {
+}: WorkCardJobYearsProps): JSX.Element => {
   return (
     <div className={style['work-card-job-years']}>
       <span>{startYear}</span>

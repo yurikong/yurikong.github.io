@@ -15,12 +15,12 @@ import style from './index.module.css'
  * @param {WorkCardProps['jobResponsibility']} props.jobResponsibility job responsibility
  * @returns {JSX.Element} the `WorkCard` component
  */
-export default function WorkCard({
+export const WorkCard = ({
   jobYears,
   jobPosition,
   jobResponsibility,
   className,
-}: WorkCardProps): JSX.Element {
+}: WorkCardProps): JSX.Element => {
   const divClassName = `${style['work-card']} ${className ?? ''}`.trim()
 
   return (

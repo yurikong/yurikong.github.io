@@ -10,10 +10,7 @@ import type { ExternalLinkProps } from './types'
  * @param {ExternalLinkProps['text']} props.text link text
  * @returns {JSX.Element} the `ExternalLink` component
  */
-export default function ExternalLink({
-  to,
-  text,
-}: ExternalLinkProps): JSX.Element {
+export const ExternalLink = ({ to, text }: ExternalLinkProps): JSX.Element => {
   return (
     <Link
       className={style['external-link']}

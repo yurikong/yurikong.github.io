@@ -4,7 +4,7 @@ import { Intro, Work } from './components'
 /**
  * @returns {JSX.Element} the `HomePage` component
  */
-export function Component(): JSX.Element {
+export const Component = (): JSX.Element => {
   return (
     <>
       <Intro />
