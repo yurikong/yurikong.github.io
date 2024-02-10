@@ -29,7 +29,7 @@
   --max-content-width: 1200px;
 
   /* others */
-  --padding-inline: clamp(var(--gap-16), 1.5vw, var(--gap-32));
+  --padding-inline: clamp(var(--gap-16), 1.5dvw, var(--gap-32));
 }
 
 *,

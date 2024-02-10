@@ -8,12 +8,12 @@
   padding-inline: var(--padding-inline);
 }
 
-.greeting {
-  margin-bottom: var(--gap-12);
+h1 {
+  margin-bottom: 5dvh;
   color: var(--text-primary);
 }
 
-.who-am-i {
+h2 {
   font-weight: normal;
 }
 

@@ -19,9 +19,12 @@ export default function WorkCard({
   jobYears,
   jobPosition,
   jobResponsibility,
+  className,
 }: WorkCardProps): JSX.Element {
+  const divClassName = `${style['work-card']} ${className ?? ''}`.trim()
+
   return (
-    <div className={style['work-card']}>
+    <div className={divClassName}>
       <WorkCardJobYears
         startYear={jobYears.startYear}
         endYear={jobYears.endYear}

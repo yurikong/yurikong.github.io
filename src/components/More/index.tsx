@@ -1,25 +1,21 @@
 import type { JSX } from 'react'
+import type { MoreProps } from './types'
 import RiArrowDownDoubleLine from '~icons/ri/arrow-down-double-line'
 import style from './index.module.css'
 
-// component props
-interface Props {
-  className: string
-}
-
 /**
- * Scroll to element.
- * @param {Props} props component props
- * @param {string} props.className element class
- * @returns {JSX.Element} the More component
+ * 往下更多
+ * @param {MoreProps} props component props
+ * @param {MoreProps['className']} props.className class applied by parent
+ * @returns {JSX.Element} the `More` component
  */
-export default function More({ className }: Props): JSX.Element {
-  className = className.trim()
+export default function More({ className }: MoreProps): JSX.Element {
+  const divClassName = `${style['more']} ${className ?? ''}`.trim()
 
   return (
-    <div className={`${style['more']} ${className}`}>
+    <div className={divClassName}>
       <div className={style['text']}>More</div>
-      <RiArrowDownDoubleLine className={style['icon']} />
+      <RiArrowDownDoubleLine />
     </div>
   )
 }

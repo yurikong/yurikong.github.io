@@ -1,5 +1,6 @@
-import type { JSX } from 'react'
+import { type JSX } from 'react'
 import { WorkCards } from '..'
+import { More } from '@/components'
 import style from './index.module.css'
 
 /**
@@ -11,6 +12,7 @@ export default function Work(): JSX.Element {
     <section className={style['work']}>
       <header className={style['title']}>Work</header>
       <WorkCards />
+      <More className={style['more']} />
     </section>
   )
 }

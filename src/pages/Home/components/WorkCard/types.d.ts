@@ -6,4 +6,5 @@ export interface WorkCardProps {
   jobYears: WorkCardJobYearsProps
   jobPosition: WorkCardJobPositionProps
   jobResponsibility: WorkCardJobResponsibilityProps
+  className?: string | undefined
 }

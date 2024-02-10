@@ -14,7 +14,3 @@
 .text {
   text-transform: uppercase;
 }
-
-.icon {
-  color: var(--black);
-}
