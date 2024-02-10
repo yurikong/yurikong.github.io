@@ -1,8 +1,17 @@
 .external-link {
+  position: relative;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--text-secondary);
-  border-bottom-style: dotted;
   gap: var(--gap-4);
   text-transform: capitalize;
+}
+
+.external-link::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid var(--text-secondary);
+  border-bottom-style: dotted;
+  content: '';
 }
