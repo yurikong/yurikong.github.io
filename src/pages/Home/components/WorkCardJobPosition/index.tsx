@@ -1,19 +1,14 @@
 import type { JSX } from 'react'
+import type { WorkCardJobPositionProps } from './types'
 import { ExternalLink } from '@/components'
-import type { ExternalLinkProps } from '@/components/ExternalLink'
 import style from './index.module.css'
-
-interface WorkCardJobPositionProps {
-  jobTitle: string
-  externalLinkProps: ExternalLinkProps
-}
 
 /**
  * 工作岗位
- * @param {WorkCardJobPositionProps} props WorkCardJobPosition props
+ * @param {WorkCardJobPositionProps} props component props
  * @param {WorkCardJobPositionProps['jobTitle']} props.jobTitle job title
- * @param {WorkCardJobPositionProps['externalLinkProps']} props.externalLinkProps ExternalLink props
- * @returns {JSX.Element} the WorkCardJobPosition component
+ * @param {WorkCardJobPositionProps['externalLinkProps']} props.externalLinkProps `ExternalLink` component props
+ * @returns {JSX.Element} the `WorkCardJobPosition` component
  */
 export default function WorkCardJobPosition({
   jobTitle,

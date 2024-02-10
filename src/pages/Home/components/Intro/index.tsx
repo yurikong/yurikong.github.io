@@ -3,7 +3,7 @@ import { More } from '@/components'
 import style from './index.module.css'
 
 /**
- * @returns {JSX.Element} Intro section
+ * @returns {JSX.Element} the `Intro` component
  */
 export default function Intro(): JSX.Element {
   return (

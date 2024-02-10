@@ -1,15 +1,16 @@
 import type { JSX } from 'react'
+import { WorkCards } from '..'
 import style from './index.module.css'
-import { WorkCard } from '..'
 
 /**
- * @returns {JSX.Element} Work section
+ * 工作
+ * @returns {JSX.Element} the `Work` component
  */
 export default function Work(): JSX.Element {
   return (
     <section className={style['work']}>
       <header className={style['title']}>Work</header>
-      <WorkCard />
+      <WorkCards />
     </section>
   )
 }

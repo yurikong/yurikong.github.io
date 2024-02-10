@@ -1,4 +1,5 @@
 import type { JSX } from 'react'
+import type { WorkCardProps } from './types'
 import {
   WorkCardJobYears,
   WorkCardJobPosition,
@@ -7,22 +8,33 @@ import {
 import style from './index.module.css'
 
 /**
- * @returns {JSX.Element} WorkCard
+ * 工作卡片
+ * @param {WorkCardProps} props component props
+ * @param {WorkCardProps['jobYears']} props.jobYears job years
+ * @param {WorkCardProps['jobPosition']} props.jobPosition job position
+ * @param {WorkCardProps['jobResponsibility']} props.jobResponsibility job responsibility
+ * @returns {JSX.Element} the `WorkCard` component
  */
-export default function WorkCard(): JSX.Element {
+export default function WorkCard({
+  jobYears,
+  jobPosition,
+  jobResponsibility,
+}: WorkCardProps): JSX.Element {
   return (
     <div className={style['work-card']}>
-      <WorkCardJobYears startYear={2023} />
-
-      <WorkCardJobPosition
-        jobTitle='Software Engineer'
-        externalLinkProps={{
-          to: 'https://www.sacmi.cn/zh-cn/Sacmi-China-cn',
-          text: 'Sacmi Nanhai',
-        }}
+      <WorkCardJobYears
+        startYear={jobYears.startYear}
+        endYear={jobYears.endYear}
       />
 
-      <WorkCardJobResponsibility text='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, perspiciatis corrupti excepturi nulla reiciendis laboriosam expedita cumque eum doloribus blanditiis, fugit cupiditate, porro praesentium dolorum! Repudiandae nam minima amet corrupti.' />
+      <WorkCardJobPosition
+        jobTitle={jobPosition.jobTitle}
+        externalLinkProps={jobPosition.externalLinkProps}
+      />
+
+      <WorkCardJobResponsibility
+        responsibility={jobResponsibility.responsibility}
+      />
     </div>
   )
 }

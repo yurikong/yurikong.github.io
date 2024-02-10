@@ -2,17 +2,13 @@ import type { JSX } from 'react'
 import { Link } from 'react-router-dom'
 import RiExternalLinkLine from '~icons/ri/external-link-line'
 import style from './index.module.css'
-
-export interface ExternalLinkProps {
-  to: string
-  text: string
-}
+import type { ExternalLinkProps } from './types'
 
 /**
- * @param {ExternalLinkProps} props ExternalLink props
+ * @param {ExternalLinkProps} props component props
  * @param {ExternalLinkProps['to']} props.to href
  * @param {ExternalLinkProps['text']} props.text link text
- * @returns {JSX.Element} the ExternalLink component
+ * @returns {JSX.Element} the `ExternalLink` component
  */
 export default function ExternalLink({
   to,

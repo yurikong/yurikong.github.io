@@ -1,8 +1,8 @@
 import type { JSX } from 'react'
-import { Work, Intro } from './components'
+import { Intro, Work } from './components'
 
 /**
- * @returns {JSX.Element} Home page
+ * @returns {JSX.Element} the `HomePage` component
  */
 export function Component(): JSX.Element {
   return (
