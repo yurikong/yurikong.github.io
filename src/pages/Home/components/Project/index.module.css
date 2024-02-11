@@ -1,0 +1,24 @@
+.project {
+  --gap: 4dvh;
+  --padding-top: var(--gap);
+  --padding-bottom: 15dvh;
+
+  position: relative;
+  min-height: 100dvh;
+  padding-block: var(--padding-top) var(--padding-bottom);
+  padding-inline: var(--padding-inline);
+}
+
+.title {
+  color: var(--text-primary);
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-block-end: var(--gap);
+}
+
+.more {
+  position: absolute;
+  bottom: var(--padding-bottom);
+  left: 50dvw;
+  transform: translateX(-50%) translateY(100%);
+}
