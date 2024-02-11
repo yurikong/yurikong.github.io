@@ -5,7 +5,7 @@ import style from './index.module.css'
 
 /**
  * @param {IntroProps} props component props
- * @param {IntroProps['scrollIntoViewRef']} props.scrollIntoViewRef scrollIntoView by ref
+ * @param {IntroProps['scrollIntoViewRef']} props.scrollIntoViewRef target ref to call `scrollIntoView`
  * @returns {JSX.Element} the `Intro` component
  */
 export const Intro = forwardRef<HTMLElement | null, IntroProps>(function Intro(
