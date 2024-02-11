@@ -12,6 +12,7 @@ export const WorkItemList = (): JSX.Element => {
     {
       jobYears: {
         startYear: 2023,
+        tag: 'full-time',
       },
       jobPosition: {
         jobTitle: 'Software Engineer',
@@ -29,6 +30,7 @@ export const WorkItemList = (): JSX.Element => {
       jobYears: {
         startYear: 2021,
         endYear: 2023,
+        tag: 'full-time',
       },
       jobPosition: {
         jobTitle: 'Frontend Developer',

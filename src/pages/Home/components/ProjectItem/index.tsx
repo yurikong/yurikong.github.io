@@ -6,8 +6,8 @@ import style from './index.module.css'
  * @returns {JSX.Element} the `ProjectItem` component
  */
 export const ProjectItem = (): JSX.Element => {
-  // const divClassName = `${style['project-card']} ${className ?? ''}`.trim()
-  const divClassName = style['project-item']
+  // const fullClassName = `${style['project-card']} ${className ?? ''}`.trim()
+  const fullClassName = style['project-item']
 
-  return <div className={divClassName}>Project Item</div>
+  return <div className={fullClassName}>Project Item</div>
 }

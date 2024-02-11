@@ -25,19 +25,11 @@ export const WorkItem = ({
 
   return (
     <li className={fullClassName}>
-      <WorkItemJobYears
-        startYear={jobYears.startYear}
-        endYear={jobYears.endYear}
-      />
+      <WorkItemJobYears {...jobYears} />
 
-      <WorkItemJobPosition
-        jobTitle={jobPosition.jobTitle}
-        externalLinkProps={jobPosition.externalLinkProps}
-      />
+      <WorkItemJobPosition {...jobPosition} />
 
-      <WorkItemJobResponsibility
-        responsibility={jobResponsibility.responsibility}
-      />
+      <WorkItemJobResponsibility {...jobResponsibility} />
     </li>
   )
 }
