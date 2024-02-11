@@ -1,21 +1,33 @@
 import type { JSX } from 'react'
 import type { MoreProps } from './types'
 import RiArrowDownDoubleLine from '~icons/ri/arrow-down-double-line'
+import { scrollIntoView } from '@/utils'
 import style from './index.module.css'
 
 /**
  * 往下更多
  * @param {MoreProps} props component props
  * @param {MoreProps['className']} props.className class applied by parent
+ * @param {MoreProps['scrollIntoViewRef']} props.scrollIntoViewRef scrollIntoView target
  * @returns {JSX.Element} the `More` component
  */
-export const More = ({ className }: MoreProps): JSX.Element => {
+export const More = ({
+  className,
+  scrollIntoViewRef,
+}: MoreProps): JSX.Element => {
   const divClassName = `${style['more']} ${className ?? ''}`.trim()
 
+  /**
+   * 处理点击事件
+   */
+  const handleClick = (): void => {
+    scrollIntoView(scrollIntoViewRef)
+  }
+
   return (
-    <div className={divClassName}>
+    <button className={divClassName} onClick={handleClick}>
       <div className={style['text']}>More</div>
       <RiArrowDownDoubleLine />
-    </div>
+    </button>
   )
 }

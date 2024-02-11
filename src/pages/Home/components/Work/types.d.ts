@@ -1,6 +1,5 @@
 import type { MutableRefObject } from 'react'
 
-export interface MoreProps {
-  className?: string | undefined
+export interface WorkProps {
   scrollIntoViewRef: MutableRefObject<HTMLElement | null>
 }
