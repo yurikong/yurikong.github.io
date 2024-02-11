@@ -39,7 +39,7 @@ export const WorkItemList = (): JSX.Element => {
       },
       jobResponsibility: {
         responsibility:
-          'Developed and maintained 2 web apps for the client SdeBank, including a CRM system and a data visualization app. Worked closely with UI designers and test engineers to ensure a good quality.',
+          'Developed and maintained 2 web apps for the client SdeBank, including a CRM system and a data visualization app. Worked closely with UI designers and QA engineers to ensure a good quality.',
       },
     },
   ]
