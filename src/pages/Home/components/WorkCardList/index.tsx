@@ -5,10 +5,10 @@ import style from './index.module.css'
 
 /**
  * 工作卡片列表
- * @returns {JSX.Element} the `WorkCards` component
+ * @returns {JSX.Element} the `WorkCardList` component
  */
-export const WorkCards = (): JSX.Element => {
-  const workCardList: WorkCardProps[] = [
+export const WorkCardList = (): JSX.Element => {
+  const data: WorkCardProps[] = [
     {
       jobYears: {
         startYear: 2023,
@@ -45,8 +45,8 @@ export const WorkCards = (): JSX.Element => {
   ]
 
   return (
-    <div className={style['work-cards']}>
-      {workCardList.map(
+    <div className={style['work-card-list']}>
+      {data.map(
         (
           { jobYears, jobPosition, jobResponsibility }: WorkCardProps,
           i: number

@@ -1,6 +1,6 @@
 import { type JSX, forwardRef } from 'react'
 import type { WorkProps } from './types'
-import { WorkCards } from '..'
+import { WorkCardList } from '..'
 import { More } from '@/components'
 import style from './index.module.css'
 
@@ -17,7 +17,7 @@ export const Work = forwardRef<HTMLElement | null, WorkProps>(function Work(
   return (
     <section className={style['work']} ref={ref}>
       <header className={style['title']}>Work</header>
-      <WorkCards />
+      <WorkCardList />
       <More className={style['more']} scrollIntoViewRef={scrollIntoViewRef} />
     </section>
   )

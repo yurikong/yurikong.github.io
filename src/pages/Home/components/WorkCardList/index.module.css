@@ -1,9 +1,9 @@
-.work-cards > .work-card {
+.work-card-list > .work-card {
   --margin-block-end: 8dvh;
 
   margin-block-end: var(--margin-block-end);
 }
 
-.work-cards > .work-card:last-of-type {
+.work-card-list > .work-card:last-of-type {
   margin-block-end: calc(var(--margin-block-end) * 2);
 }
