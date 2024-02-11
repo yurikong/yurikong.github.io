@@ -8,7 +8,7 @@ import {
 import style from './index.module.css'
 
 /**
- * 工作卡片
+ * 工作
  * @param {WorkItemProps} props component props
  * @param {WorkItemProps['jobYears']} props.jobYears job years
  * @param {WorkItemProps['jobPosition']} props.jobPosition job position

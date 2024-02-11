@@ -8,7 +8,7 @@ import style from './index.module.css'
  * 往下更多
  * @param {MoreProps} props component props
  * @param {MoreProps['className']} props.className class applied by parent
- * @param {MoreProps['scrollIntoViewRef']} props.scrollIntoViewRef scrollIntoView target
+ * @param {MoreProps['scrollIntoViewRef']} props.scrollIntoViewRef target ref to call `scrollIntoView`
  * @returns {JSX.Element} the `More` component
  */
 export const More = ({

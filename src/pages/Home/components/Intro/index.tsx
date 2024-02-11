@@ -4,6 +4,7 @@ import { More } from '@/components'
 import style from './index.module.css'
 
 /**
+ * 开场白
  * @param {IntroProps} props component props
  * @param {IntroProps['scrollIntoViewRef']} props.scrollIntoViewRef target ref to call `scrollIntoView`
  * @returns {JSX.Element} the `Intro` component

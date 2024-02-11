@@ -5,6 +5,7 @@ import style from './index.module.css'
 import type { ExternalLinkProps } from './types'
 
 /**
+ * 外部链接
  * @param {ExternalLinkProps} props component props
  * @param {ExternalLinkProps['to']} props.to href
  * @param {ExternalLinkProps['text']} props.text link text
