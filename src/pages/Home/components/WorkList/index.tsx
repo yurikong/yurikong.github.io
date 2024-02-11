@@ -45,7 +45,7 @@ export const WorkList = (): JSX.Element => {
   ]
 
   return (
-    <div className={style['work-list']}>
+    <div>
       {data.map(
         (
           { jobYears, jobPosition, jobResponsibility }: WorkCardProps,
