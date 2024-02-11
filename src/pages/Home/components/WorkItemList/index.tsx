@@ -1,14 +1,14 @@
 import type { JSX } from 'react'
-import type { WorkCardProps } from '../WorkCard/types'
-import { WorkCard } from '..'
+import type { WorkItemProps } from '../WorkItem/types'
+import { WorkItem } from '..'
 import style from './index.module.css'
 
 /**
  * 工作列表
- * @returns {JSX.Element} the `WorkList` component
+ * @returns {JSX.Element} the `WorkItemList` component
  */
-export const WorkList = (): JSX.Element => {
-  const data: WorkCardProps[] = [
+export const WorkItemList = (): JSX.Element => {
+  const data: WorkItemProps[] = [
     {
       jobYears: {
         startYear: 2023,
@@ -48,11 +48,11 @@ export const WorkList = (): JSX.Element => {
     <div>
       {data.map(
         (
-          { jobYears, jobPosition, jobResponsibility }: WorkCardProps,
+          { jobYears, jobPosition, jobResponsibility }: WorkItemProps,
           i: number
         ) => (
-          <WorkCard
-            className={style['work-card']}
+          <WorkItem
+            className={style['work-item']}
             key={i}
             jobYears={jobYears}
             jobPosition={jobPosition}

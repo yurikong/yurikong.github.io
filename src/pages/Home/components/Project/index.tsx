@@ -1,6 +1,6 @@
 import { type JSX, forwardRef } from 'react'
 import type { ProjectProps } from './types'
-import { ProjectList } from '..'
+import { ProjectItemList } from '..'
 import { More } from '@/components'
 import style from './index.module.css'
 
@@ -13,9 +13,9 @@ import style from './index.module.css'
 export const Project = forwardRef<HTMLElement | null, ProjectProps>(
   function Project({ scrollIntoViewRef }, ref): JSX.Element {
     return (
-      <section className={style['projects']} ref={ref}>
+      <section className={style['project']} ref={ref}>
         <header className={style['title']}>Projects</header>
-        <ProjectList />
+        <ProjectItemList />
         <More className={style['more']} scrollIntoViewRef={scrollIntoViewRef} />
       </section>
     )
