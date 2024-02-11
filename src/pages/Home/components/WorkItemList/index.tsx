@@ -45,7 +45,7 @@ export const WorkItemList = (): JSX.Element => {
   ]
 
   return (
-    <div>
+    <ul>
       {data.map(
         (
           { jobYears, jobPosition, jobResponsibility }: WorkItemProps,
@@ -60,6 +60,6 @@ export const WorkItemList = (): JSX.Element => {
           />
         )
       )}
-    </div>
+    </ul>
   )
 }

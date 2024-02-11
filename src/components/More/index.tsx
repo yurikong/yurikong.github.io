@@ -15,7 +15,7 @@ export const More = ({
   className,
   scrollIntoViewRef,
 }: MoreProps): JSX.Element => {
-  const divClassName = `${style['more']} ${className ?? ''}`.trim()
+  const fullClassName = `${style['more']} ${className ?? ''}`.trim()
 
   /**
    * 处理点击事件
@@ -25,7 +25,7 @@ export const More = ({
   }
 
   return (
-    <button className={divClassName} onClick={handleClick}>
+    <button className={fullClassName} onClick={handleClick}>
       <div className={style['text']}>More</div>
       <RiArrowDownDoubleLine />
     </button>

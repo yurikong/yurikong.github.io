@@ -21,10 +21,10 @@ export const WorkItem = ({
   jobResponsibility,
   className,
 }: WorkItemProps): JSX.Element => {
-  const divClassName = `${style['work-item']} ${className ?? ''}`.trim()
+  const fullClassName = `${style['work-item']} ${className ?? ''}`.trim()
 
   return (
-    <div className={divClassName}>
+    <li className={fullClassName}>
       <WorkItemJobYears
         startYear={jobYears.startYear}
         endYear={jobYears.endYear}
@@ -38,6 +38,6 @@ export const WorkItem = ({
       <WorkItemJobResponsibility
         responsibility={jobResponsibility.responsibility}
       />
-    </div>
+    </li>
   )
 }
