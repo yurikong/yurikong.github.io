@@ -2,7 +2,7 @@ import type { MutableRefObject } from 'react'
 
 /**
  * 平滑滚动到元素
- * @param {MutableRefObject<HTMLElement | null>} ref DOM ref
+ * @param {MutableRefObject<HTMLElement | null>} ref target
  */
 export const scrollIntoView = (
   ref: MutableRefObject<HTMLElement | null>

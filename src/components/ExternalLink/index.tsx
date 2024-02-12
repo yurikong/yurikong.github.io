@@ -1,8 +1,8 @@
 import type { JSX } from 'react'
+import type { ExternalLinkProps } from './types'
 import { Link } from 'react-router-dom'
 import RiExternalLinkLine from '~icons/ri/external-link-line'
 import style from './index.module.css'
-import type { ExternalLinkProps } from './types'
 
 /**
  * 外部链接

@@ -2,6 +2,7 @@ import { type JSX, useRef } from 'react'
 import { Intro, Work, Project } from './components'
 
 /**
+ * 首页
  * @returns {JSX.Element} the `HomePage` component
  */
 export const Component = (): JSX.Element => {

@@ -4,7 +4,8 @@ import RiMenuLine from '~icons/ri/menu-line'
 import style from './index.module.css'
 
 /**
- * @returns {JSX.Element} the AppHeader component
+ * 页眉
+ * @returns {JSX.Element} the `AppHeader` component
  */
 export const AppHeader = (): JSX.Element => {
   const [visible, setVisible] = useState<boolean>(true)

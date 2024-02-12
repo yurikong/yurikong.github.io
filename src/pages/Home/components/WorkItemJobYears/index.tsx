@@ -8,7 +8,7 @@ import style from './index.module.css'
  * @param {WorkItemJobYearsProps} props component props
  * @param {WorkItemJobYearsProps['startYear']} props.startYear start year
  * @param {WorkItemJobYearsProps['endYear']} [props.endYear] end year, default is `undefined`
- * @param {WorkItemJobYearsProps['tag']} props.tag tag
+ * @param {WorkItemJobYearsProps['tag']} props.tag job type tag
  * @returns {JSX.Element} the `WorkItemJobYears` component
  */
 export const WorkItemJobYears = ({
