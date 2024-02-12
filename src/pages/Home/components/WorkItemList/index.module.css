@@ -1,5 +1,5 @@
 .work-item {
-  --margin-block-end: 8dvh;
+  --margin-block-end: 8svh;
 
   margin-block-end: var(--margin-block-end);
 }

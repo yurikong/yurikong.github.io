@@ -1,15 +1,15 @@
 .intro {
-  --padding-top: 25dvh;
-  --padding-bottom: 15dvh;
+  --padding-top: 25svh;
+  --padding-bottom: 15svh;
 
   position: relative;
-  height: 100dvh;
+  height: 100svh;
   padding-block: var(--padding-top) var(--padding-bottom);
   padding-inline: var(--padding-inline);
 }
 
 h1 {
-  margin-bottom: 5dvh;
+  margin-bottom: 5svh;
   color: var(--text-primary);
 }
 
@@ -20,6 +20,6 @@ h2 {
 .more {
   position: absolute;
   bottom: var(--padding-bottom);
-  left: 50dvw;
+  left: 50svw;
   transform: translateX(-50%) translateY(100%);
 }
