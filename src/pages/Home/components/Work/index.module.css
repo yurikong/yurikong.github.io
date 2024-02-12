@@ -10,10 +10,15 @@
 }
 
 .title {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  background-color: var(--white);
   color: var(--text-primary);
   font-size: 1.8rem;
   font-weight: bold;
   margin-block-end: var(--gap);
+  padding-block: var(--gap-8);
 }
 
 .more {
