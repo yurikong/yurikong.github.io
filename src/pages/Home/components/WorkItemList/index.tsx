@@ -48,20 +48,9 @@ export const WorkItemList = (): JSX.Element => {
 
   return (
     <ul>
-      {data.map(
-        (
-          { jobYears, jobPosition, jobResponsibility }: WorkItemProps,
-          i: number
-        ) => (
-          <WorkItem
-            className={style['work-item']}
-            key={i}
-            jobYears={jobYears}
-            jobPosition={jobPosition}
-            jobResponsibility={jobResponsibility}
-          />
-        )
-      )}
+      {data.map((item: WorkItemProps, i: number) => (
+        <WorkItem className={style['work-item']} key={i} {...item} />
+      ))}
     </ul>
   )
 }
