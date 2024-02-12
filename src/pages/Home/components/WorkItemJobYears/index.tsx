@@ -22,8 +22,12 @@ export const WorkItemJobYears = ({
     <div className={style['work-item-job-years']}>
       <div className={style['job-years']}>
         <span>{startYear}</span>
-        <RiSubtractLine />
-        <span>{endYear ?? 'Present'}</span>
+        {startYear !== endYear && (
+          <>
+            <RiSubtractLine />
+            <span>{endYear ?? 'Present'}</span>
+          </>
+        )}
       </div>
       <div className={tagClassName}>{tag}</div>
     </div>

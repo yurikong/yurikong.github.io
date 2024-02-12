@@ -14,15 +14,30 @@ export const ProjectItemList = (): JSX.Element => {
       details: {
         name: 'Sacmi Digital Printer Client',
         description:
-          "A desktop client for digital printing on ceramic tiles using Dimatix Starfire printheads and Meteor's PrintEngine SDK.",
+          "Desktop application for digital printing on ceramic tiles using Dimatix Starfire printheads and Meteor's PrintEngine SDK.",
       },
     },
     {
       imgSrc: 'https://images.unsplash.com/photo-1707432472523-615ae7c7b8f8',
       details: {
-        name: 'SDPC',
+        name: 'COA Generator',
         description:
-          'A desktop client for digital printing on ceramic tiles using Dimatix Starfire printheads and Meteor PrintEngine SDK.',
+          'Desktop client for generating Certificate of Analysis for use in a testing laboratory.',
+      },
+    },
+    {
+      imgSrc: 'https://images.unsplash.com/photo-1707432472523-615ae7c7b8f8',
+      details: {
+        name: 'Digifly',
+        description:
+          'Data visualization web app with 7 pages presented on 9 large screens in a bank lobby.',
+      },
+    },
+    {
+      imgSrc: 'https://images.unsplash.com/photo-1707432472523-615ae7c7b8f8',
+      details: {
+        name: 'Big Data Management Platform',
+        description: 'CRM on the web. For bank internal use only.',
       },
     },
   ]

@@ -23,7 +23,25 @@ export const WorkItemList = (): JSX.Element => {
       },
       jobResponsibility: {
         responsibility:
-          'Build the core software for digital printing machines in ceramic tiles production in the R&D department. Provide leadership within a tiny software development team of 2 members through close collaboration and knowledge sharing.',
+          'Build a desktop client for digital printing machines in ceramic tiles production in the R&D department. Provide leadership within a tiny software development team of 2 members through close collaboration and knowledge sharing.',
+      },
+    },
+    {
+      jobYears: {
+        startYear: 2023,
+        endYear: 2023,
+        tag: 'freelance',
+      },
+      jobPosition: {
+        jobTitle: 'Developer',
+        externalLinkProps: {
+          to: 'http://www.aatestingservice.com/',
+          text: 'AATS',
+        },
+      },
+      jobResponsibility: {
+        responsibility:
+          'Built a desktop client for the purpose of Certificate of Analysis generation using laboratory data provided by the client.',
       },
     },
     {
@@ -33,7 +51,7 @@ export const WorkItemList = (): JSX.Element => {
         tag: 'full-time',
       },
       jobPosition: {
-        jobTitle: 'Frontend Developer',
+        jobTitle: 'Front-End Developer',
         externalLinkProps: {
           to: 'http://www.stramo.cn/',
           text: 'Stramo',
