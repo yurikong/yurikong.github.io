@@ -1,10 +1,10 @@
 .project {
-  --gap: 4dvh;
+  --gap: 4svh;
   --padding-top: var(--gap);
-  --padding-bottom: 15dvh;
+  --padding-bottom: 15svh;
 
   position: relative;
-  min-height: 100dvh;
+  min-height: 100svh;
   padding-block: var(--padding-top) var(--padding-bottom);
   padding-inline: var(--padding-inline);
 }
@@ -19,6 +19,6 @@
 .more {
   position: absolute;
   bottom: var(--padding-bottom);
-  left: 50dvw;
+  left: 50svw;
   transform: translateX(-50%) translateY(100%);
 }

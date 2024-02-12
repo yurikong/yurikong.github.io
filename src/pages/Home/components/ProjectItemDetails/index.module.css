@@ -1,0 +1,16 @@
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: var(--gap-8);
+  gap: var(--gap-4);
+}
+
+.name {
+  color: var(--text-secondary);
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.description {
+  color: var(--text-tertiary);
+}

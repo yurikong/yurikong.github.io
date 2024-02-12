@@ -1,3 +1,17 @@
 .project-item {
-  border: 1px solid blue;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: 0.8rem;
+}
+
+.img-wrapper {
+  height: 25rem;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

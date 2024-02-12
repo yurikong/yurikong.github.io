@@ -1,3 +1,5 @@
-.project-item-list {
-  border: 1px solid red;
+.project-item {
+  --margin-block-end: 8svh;
+
+  margin-block-end: var(--margin-block-end);
 }
