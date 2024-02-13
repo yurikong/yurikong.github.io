@@ -15,6 +15,7 @@ export const ProjectItemList = (): JSX.Element => {
         name: 'Sacmi Digital Printer Client',
         description:
           "Desktop application for digital printing on ceramic tiles using Dimatix Starfire printheads and Meteor's PrintEngine SDK.",
+        techStack: ['Electron', 'Typescript', 'Vue'],
       },
     },
     {
@@ -23,6 +24,7 @@ export const ProjectItemList = (): JSX.Element => {
         name: 'COA Generator',
         description:
           'Desktop client for generating Certificate of Analysis in an analytical testing laboratory.',
+        techStack: ['Flutter'],
       },
     },
     {
@@ -31,6 +33,7 @@ export const ProjectItemList = (): JSX.Element => {
         name: 'Digifly',
         description:
           'Data visualization web app with 7 pages presented on 9 large screens in a bank lobby.',
+        techStack: ['Javascript', 'Vue'],
       },
     },
     {
@@ -38,6 +41,7 @@ export const ProjectItemList = (): JSX.Element => {
       details: {
         name: 'Big Data Management Platform',
         description: 'CRM on the web. For bank internal use only.',
+        techStack: ['Javascript', 'Vue'],
       },
     },
   ]
