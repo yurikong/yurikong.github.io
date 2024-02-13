@@ -15,7 +15,8 @@
 }
 
 .tag {
-  text-transform: capitalize;
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }
 
 /* TODO: find better colors */

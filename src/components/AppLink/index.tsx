@@ -20,13 +20,9 @@ export const AppLink = ({
   to,
   // scrollIntoViewRef,
 }: AppLinkProps): JSX.Element => {
-  const appLinkClassName = `${style['app-link']} ${
-    external ? style['external'] : ''
-  }`.trim()
-
   return (
     <Link
-      className={appLinkClassName}
+      className={style['app-link']}
       to={external ? to! : '#'}
       target={external ? '_blank' : '_self'}
       referrerPolicy='no-referrer'

@@ -26,18 +26,9 @@ export const WorkItemList = (): JSX.Element => {
         responsibility:
           'Build a desktop client for digital printing machines in ceramic tiles production in the R&D department. Provide leadership within a tiny software development team of 2 members through close collaboration and knowledge sharing.',
       },
-      projectTags: [
+      relatedProjects: [
         {
-          name: 'Sacmi Digital Printer Client',
-          scrollIntoViewRef: undefined, // TODO: fix this
-        },
-        // TODO: remove below
-        {
-          name: 'SDPC',
-          scrollIntoViewRef: undefined, // TODO: fix this
-        },
-        {
-          name: 'Sacmi Digital Printer Client',
+          text: 'Sacmi Digital Printer Client',
           scrollIntoViewRef: undefined, // TODO: fix this
         },
       ],
@@ -58,8 +49,14 @@ export const WorkItemList = (): JSX.Element => {
       },
       jobResponsibility: {
         responsibility:
-          'Built a desktop client for generating Certificate of Analysis in an analytical testing laboratory. Used only off-work hours and spare time on weekends.',
+          'Built a desktop client for generating Certificate of Analysis in an analytical testing laboratory.',
       },
+      relatedProjects: [
+        {
+          text: 'COA Generator',
+          scrollIntoViewRef: undefined, // TODO: fix this
+        },
+      ],
     },
     {
       jobYears: {
@@ -79,14 +76,26 @@ export const WorkItemList = (): JSX.Element => {
         responsibility:
           'Developed and maintained 2 web apps for the client SdeBank, including a CRM system and a data visualization app. Worked closely with UI designers and QA engineers to ensure a good quality.',
       },
+      relatedProjects: [
+        {
+          text: 'Digifly',
+          scrollIntoViewRef: undefined, // TODO: fix this
+        },
+        {
+          text: 'Big Data Management Platform',
+          scrollIntoViewRef: undefined, // TODO: fix this
+        },
+      ],
     },
   ]
 
   return (
     <ul>
-      {data.map((item: WorkItemProps, i: number) => (
-        <WorkItem className={style['work-item']} key={i} {...item} />
-      ))}
+      {data.map(
+        (item: WorkItemProps, i: number): JSX.Element => (
+          <WorkItem className={style['work-item']} key={i} {...item} />
+        )
+      )}
     </ul>
   )
 }

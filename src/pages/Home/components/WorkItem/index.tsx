@@ -14,14 +14,14 @@ import style from './index.module.css'
  * @param {WorkItemProps['jobYears']} props.jobYears job years
  * @param {WorkItemProps['jobPosition']} props.jobPosition job position
  * @param {WorkItemProps['jobResponsibility']} props.jobResponsibility job responsibility
- * @param {WorkItemProps['projectTags']} props.projectTags related projects
+ * @param {WorkItemProps['relatedProjects']} props.relatedProjects related projects
  * @returns {JSX.Element} the `WorkItem` component
  */
 export const WorkItem = ({
   jobYears,
   jobPosition,
   jobResponsibility,
-  projectTags,
+  relatedProjects,
   className,
 }: WorkItemProps): JSX.Element => {
   const fullClassName = `${style['work-item']} ${className ?? ''}`.trim()
@@ -34,7 +34,9 @@ export const WorkItem = ({
 
       <WorkItemJobResponsibility {...jobResponsibility} />
 
-      {projectTags?.length && <WorkItemProjectList data={projectTags} />}
+      {relatedProjects?.length && (
+        <WorkItemProjectList data={relatedProjects} />
+      )}
     </li>
   )
 }
