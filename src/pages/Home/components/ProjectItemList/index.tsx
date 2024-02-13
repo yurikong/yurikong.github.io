@@ -22,7 +22,7 @@ export const ProjectItemList = (): JSX.Element => {
       details: {
         name: 'COA Generator',
         description:
-          'Desktop client for generating Certificate of Analysis for use in a testing laboratory.',
+          'Desktop client for generating Certificate of Analysis in an analytical testing laboratory.',
       },
     },
     {
