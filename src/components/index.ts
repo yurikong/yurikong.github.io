@@ -1,4 +1,4 @@
 export { AppHeader } from './AppHeader'
 export { AppFooter } from './AppFooter'
-export { ExternalLink } from './ExternalLink'
+export { AppLink } from './AppLink'
 export { More } from './More'

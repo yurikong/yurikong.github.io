@@ -1,6 +1,6 @@
-import type { ExternalLinkProps } from '@/components/ExternalLink/types'
+import type { AppLinkProps } from '@/components/AppLink/types'
 
 export interface WorkItemJobPositionProps {
   jobTitle: string
-  externalLinkProps: ExternalLinkProps
+  linkProps: AppLinkProps
 }

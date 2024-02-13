@@ -16,7 +16,8 @@ export const WorkItemList = (): JSX.Element => {
       },
       jobPosition: {
         jobTitle: 'Software Engineer',
-        externalLinkProps: {
+        linkProps: {
+          external: true,
           to: 'https://www.sacmi.cn/zh-cn/Sacmi-China-cn',
           text: 'Sacmi Nanhai',
         },
@@ -25,6 +26,21 @@ export const WorkItemList = (): JSX.Element => {
         responsibility:
           'Build a desktop client for digital printing machines in ceramic tiles production in the R&D department. Provide leadership within a tiny software development team of 2 members through close collaboration and knowledge sharing.',
       },
+      projectTags: [
+        {
+          name: 'Sacmi Digital Printer Client',
+          scrollIntoViewRef: undefined, // TODO: fix this
+        },
+        // TODO: remove below
+        {
+          name: 'SDPC',
+          scrollIntoViewRef: undefined, // TODO: fix this
+        },
+        {
+          name: 'Sacmi Digital Printer Client',
+          scrollIntoViewRef: undefined, // TODO: fix this
+        },
+      ],
     },
     {
       jobYears: {
@@ -34,14 +50,15 @@ export const WorkItemList = (): JSX.Element => {
       },
       jobPosition: {
         jobTitle: 'Developer',
-        externalLinkProps: {
+        linkProps: {
+          external: true,
           to: 'http://www.aatestingservice.com/',
           text: 'AATS',
         },
       },
       jobResponsibility: {
         responsibility:
-          'Built a desktop client for the purpose of Certificate of Analysis generation using laboratory data provided by the client.',
+          'Built a desktop client for generating Certificate of Analysis in an analytical testing laboratory. Used only off-work hours and spare time on weekends.',
       },
     },
     {
@@ -52,7 +69,8 @@ export const WorkItemList = (): JSX.Element => {
       },
       jobPosition: {
         jobTitle: 'Front-End Developer',
-        externalLinkProps: {
+        linkProps: {
+          external: true,
           to: 'http://www.stramo.cn/',
           text: 'Stramo',
         },
