@@ -1,5 +1,6 @@
 export { AppHeader } from './AppHeader'
 export { AppFooter } from './AppFooter'
 export { AppLink, type AppLinkProps } from './AppLink'
+export { BackTop, type BackTopProps } from './BackTop'
 export { More, type MoreProps } from './More'
 export { SocialLink, type SocialLinkProps } from './SocialLink'

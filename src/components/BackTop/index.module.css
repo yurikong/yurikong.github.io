@@ -1,0 +1,17 @@
+button {
+  border: none;
+  background-color: transparent;
+}
+
+.back-top {
+  --font-size: 1.6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--gap-8);
+  color: var(--black);
+  font-size: var(--font-size);
+  gap: var(--gap-4);
+  line-height: var(--font-size);
+}

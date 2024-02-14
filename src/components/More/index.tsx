@@ -9,15 +9,15 @@ export type { MoreProps }
 /**
  * 往下更多
  * @param {MoreProps} props component props
- * @param {MoreProps['className']} props.className class applied by parent
+ * @param {MoreProps['className']} props.className class applied by parent, default is `undefined`
  * @param {MoreProps['scrollIntoViewRef']} props.scrollIntoViewRef target ref to call `scrollIntoView`
  * @returns {JSX.Element} the `More` component
  */
 export const More = ({
-  className,
+  className = '',
   scrollIntoViewRef,
 }: MoreProps): JSX.Element => {
-  const fullClassName = `${style['more']} ${className ?? ''}`.trim()
+  const fullClassName = `${style['more']} ${className}`.trim()
 
   /**
    * 处理点击事件
