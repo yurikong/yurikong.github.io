@@ -22,7 +22,7 @@ export const Component = (): JSX.Element => {
    * 滚动
    * @param {ScrollToRef} ref target ref
    */
-  const scrollTo = (ref: ScrollToRef): void => {
+  const handleScrollTo = (ref: ScrollToRef): void => {
     ref.current?.scrollIntoView({ behavior: 'smooth' })
   }
 
@@ -31,19 +31,19 @@ export const Component = (): JSX.Element => {
       <Intro
         ref={introRef}
         onScrollTo={() => {
-          scrollTo(workRef)
+          handleScrollTo(workRef)
         }}
       />
       <Work
         ref={workRef}
         onScrollTo={() => {
-          scrollTo(projectRef)
+          handleScrollTo(projectRef)
         }}
       />
       <Project
         ref={projectRef}
         onScrollTo={() => {
-          scrollTo(introRef)
+          handleScrollTo(introRef)
         }}
       />
     </>
