@@ -13,21 +13,3 @@
   gap: var(--gap-4);
   text-transform: uppercase;
 }
-
-.tag {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-}
-
-/* TODO: find better colors */
-.full-time {
-  color: red;
-}
-
-.freelance {
-  color: orange;
-}
-
-.personal {
-  color: green;
-}
