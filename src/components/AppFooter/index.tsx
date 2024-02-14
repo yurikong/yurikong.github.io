@@ -1,9 +1,71 @@
-import type { JSX } from 'react'
+import { type JSX } from 'react'
+import { SocialLink, type SocialLinkProps } from '@/components'
+import RiCopyrightLine from '~icons/ri/copyright-line'
+import RiMailLine from '~icons/ri/mail-line'
+import RiGithubLine from '~icons/ri/github-line'
+import RiWechatLine from '~icons/ri/wechat-line'
+import RiReactjsLine from '~icons/ri/reactjs-line'
+import style from './index.module.css'
 
 /**
  * 页脚
  * @returns {JSX.Element} the `AppFooter` component
  */
 export const AppFooter = (): JSX.Element => {
-  return <footer>App Footer</footer>
+  const year = new Date().getFullYear()
+  const socialLinks: SocialLinkProps[] = [
+    {
+      title: 'Email',
+      child: <RiMailLine />,
+      href: 'mailto:jackdu2013@163.com',
+    },
+    {
+      title: 'Github',
+      child: <RiGithubLine />,
+      href: 'https://github.com/yurikong',
+    },
+    {
+      title: 'Wechat',
+      child: <RiWechatLine />,
+      href: '#',
+      onClick: (e): void => {
+        e.preventDefault()
+        // TODO
+      },
+    },
+  ]
+
+  return (
+    <footer className={style['footer']}>
+      <div className={style['copyright']}>
+        <RiCopyrightLine />
+        <span>{year}</span>
+        <span>Jianqiang Du</span>
+      </div>
+
+      <ul className={style['social-links']}>
+        {socialLinks.map(
+          (item: SocialLinkProps, i: number): JSX.Element => (
+            <li key={i}>
+              <SocialLink className={style['social-link']} {...item} />
+            </li>
+          )
+        )}
+      </ul>
+
+      <div className={style['info']}>
+        <span>Site built with</span>
+        <SocialLink
+          title='React'
+          href='https://react.dev'
+          child={
+            <div className={style['engine']}>
+              <RiReactjsLine />
+              <span>React.js</span>
+            </div>
+          }
+        />
+      </div>
+    </footer>
+  )
 }
