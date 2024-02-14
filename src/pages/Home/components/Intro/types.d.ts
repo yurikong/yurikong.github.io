@@ -1,7 +1,7 @@
 import type { MouseEventHandler } from 'react'
 
 export interface IntroProps {
-  onScrollTo: MouseEventHandler<HTMLButtonElement>
+  onScrollToRef: MouseEventHandler<HTMLElement>
 }
 
 export interface IntroRef {

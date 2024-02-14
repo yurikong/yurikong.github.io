@@ -16,7 +16,7 @@ export type { WorkItemProps }
  * @param {WorkItemProps['jobResponsibility']} props.jobResponsibility 工作职责
  * @param {WorkItemProps['relatedProjects']} props.relatedProjects 相关项目
  * @param {WorkItemProps['scrollToProject']} props.scrollToProject 滚动到指定项目
- * @returns {JSX.Element} the `WorkItem` component
+ * @returns {JSX.Element} `WorkItem` 组件
  */
 export const WorkItem = ({
   jobYears,
@@ -24,18 +24,22 @@ export const WorkItem = ({
   jobResponsibility,
   relatedProjects,
   scrollToProject,
-  className,
+  className = '',
 }: WorkItemProps): JSX.Element => {
-  const fullClassName = `${style['work-item']} ${className ?? ''}`.trim()
+  const fullClassName = `${style['work-item']} ${className}`.trim()
 
   return (
     <li className={fullClassName}>
+      {/* 工作年份 */}
       <WorkItemJobYears {...jobYears} />
 
+      {/* 工作岗位 */}
       <WorkItemJobPosition {...jobPosition} />
 
+      {/* 工作职责 */}
       <WorkItemJobResponsibility {...jobResponsibility} />
 
+      {/* 关联项目 */}
       {relatedProjects?.length && (
         <WorkItemProjectList
           data={relatedProjects}

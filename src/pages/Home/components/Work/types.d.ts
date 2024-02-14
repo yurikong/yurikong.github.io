@@ -1,7 +1,7 @@
 import type { MouseEventHandler } from 'react'
 
 export interface WorkProps {
-  onScrollTo: MouseEventHandler<HTMLElement>
+  onScrollToRef: MouseEventHandler<HTMLElement>
   scrollToProject: (projectName: string) => void
 }
 

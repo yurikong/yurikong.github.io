@@ -7,7 +7,7 @@ import style from './index.module.css'
  * 工作列表
  * @param {WorkItemListProps} props 组件入参
  * @param {WorkItemListProps['scrollToProject']} props.scrollToProject 滚动到指定项目
- * @returns {JSX.Element} the `WorkItemList` component
+ * @returns {JSX.Element} `WorkItemList` 组件
  */
 export const WorkItemList = ({
   scrollToProject,

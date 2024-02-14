@@ -7,10 +7,10 @@ export type { WorkItemJobPositionProps }
 
 /**
  * 工作岗位
- * @param {WorkItemJobPositionProps} props component props
- * @param {WorkItemJobPositionProps['jobTitle']} props.jobTitle job title
- * @param {WorkItemJobPositionProps['linkProps']} props.linkProps `AppLink` component props
- * @returns {JSX.Element} the `WorkItemJobPosition` component
+ * @param {WorkItemJobPositionProps} props 组件入参
+ * @param {WorkItemJobPositionProps['jobTitle']} props.jobTitle 岗位名称
+ * @param {WorkItemJobPositionProps['linkProps']} props.linkProps 公司名称（`AppLink` 组件入参）
+ * @returns {JSX.Element} `WorkItemJobPosition` 组件
  */
 export const WorkItemJobPosition = ({
   jobTitle,
@@ -18,8 +18,12 @@ export const WorkItemJobPosition = ({
 }: WorkItemJobPositionProps): JSX.Element => {
   return (
     <div className={style['work-item-job-position']}>
+      {/* 工作岗位 */}
       <span>{jobTitle}</span>
+
       <span>@</span>
+
+      {/* 公司名称（跳转链接） */}
       <AppLink {...linkProps} />
     </div>
   )

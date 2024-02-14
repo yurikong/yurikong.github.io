@@ -11,7 +11,7 @@ export type { WorkItemProjectListProps }
  * @param {WorkItemProjectListProps} props 组件入参
  * @param {WorkItemProjectListProps['data']} props.data 项目列表
  * @param {WorkItemProjectListProps['scrollToProject']} props.scrollToProject 滚动到指定项目
- * @returns {JSX.Element} the `WorkItemProjectList` component
+ * @returns {JSX.Element} `WorkItemProjectList` 组件
  */
 export const WorkItemProjectList = ({
   data,

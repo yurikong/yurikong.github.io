@@ -7,11 +7,11 @@ export type { ProjectItemDetailsProps }
 
 /**
  * 项目信息
- * @param {ProjectItemDetailsProps} props component props
- * @param {ProjectItemDetailsProps['name']} props.name project name
- * @param {ProjectItemDetailsProps['description']} props.description project description
- * @param {ProjectItemDetailsProps['techStack']} props.techStack project tech stack / tools
- * @returns {JSX.Element} the `ProjectItemDetails` component
+ * @param {ProjectItemDetailsProps} props 组件入参
+ * @param {ProjectItemDetailsProps['name']} props.name 项目名称
+ * @param {ProjectItemDetailsProps['description']} props.description 项目描述
+ * @param {ProjectItemDetailsProps['techStack']} props.techStack 使用技术栈
+ * @returns {JSX.Element} `ProjectItemDetails` 组件
  */
 export const ProjectItemDetails = ({
   name,
@@ -20,8 +20,13 @@ export const ProjectItemDetails = ({
 }: ProjectItemDetailsProps): JSX.Element => {
   return (
     <div className={style['details']}>
+      {/* 项目名称 */}
       <div className={style['name']}>{name}</div>
+
+      {/* 项目描述 */}
       <p className={style['description']}>{description}</p>
+
+      {/* 使用的技术栈 */}
       {techStack?.length && <ProjectItemTechStack data={techStack} />}
     </div>
   )

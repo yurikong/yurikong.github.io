@@ -11,7 +11,7 @@ import {
 
 /**
  * 首页
- * @returns {JSX.Element} the `HomePage` component
+ * @returns {JSX.Element} `HomePage` 组件
  */
 export const Component = (): JSX.Element => {
   const introRef = useRef<IntroRef | null>(null)
@@ -19,10 +19,10 @@ export const Component = (): JSX.Element => {
   const projectRef = useRef<ProjectRef | null>(null)
 
   /**
-   * 滚动当前组件
-   * @param {ScrollToRef} ref target ref
+   * 滚动到指定组件
+   * @param {ScrollToRef} ref 目标组件的ref
    */
-  const handleScrollTo = (ref: ScrollToRef): void => {
+  const scrollToRef = (ref: ScrollToRef): void => {
     ref.current?.scrollIntoView({ behavior: 'smooth' })
   }
 
@@ -38,21 +38,21 @@ export const Component = (): JSX.Element => {
     <>
       <Intro
         ref={introRef}
-        onScrollTo={() => {
-          handleScrollTo(workRef)
+        onScrollToRef={() => {
+          scrollToRef(workRef)
         }}
       />
       <Work
         ref={workRef}
-        onScrollTo={() => {
-          handleScrollTo(projectRef)
+        onScrollToRef={() => {
+          scrollToRef(projectRef)
         }}
         scrollToProject={scrollToProject}
       />
       <Project
         ref={projectRef}
-        onScrollTo={() => {
-          handleScrollTo(introRef)
+        onScrollToRef={() => {
+          scrollToRef(introRef)
         }}
       />
     </>

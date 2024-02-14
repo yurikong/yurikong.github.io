@@ -7,7 +7,7 @@ export type { NamedProjectItemRef, ProjectItemListRef }
 
 /**
  * 项目列表
- * @returns {JSX.Element} the `ProjectItemList` component
+ * @returns {JSX.Element} `ProjectItemList` 组件
  */
 export const ProjectItemList = forwardRef<ProjectItemListRef>(
   function ProjectItemList(_props, ref): JSX.Element {

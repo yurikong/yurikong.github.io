@@ -8,12 +8,12 @@ export type { ProjectProps, ProjectRef }
 
 /**
  * 项目
- * @param {ProjectProps} props component props
- * @param {ProjectProps['onScrollTo']} props.onScrollTo click handler for scrolling to a `ref`
- * @returns {JSX.Element} the `Project` component
+ * @param {ProjectProps} props 组件入参
+ * @param {ProjectProps['onScrollToRef']} props.onScrollToRef 处理 `More` 组件的 `onClick`
+ * @returns {JSX.Element} `Project` 组件
  */
 export const Project = forwardRef<ProjectRef, ProjectProps>(function Project(
-  { onScrollTo },
+  { onScrollToRef },
   ref
 ): JSX.Element {
   const projectRef = useRef<HTMLElement | null>(null)
@@ -52,9 +52,14 @@ export const Project = forwardRef<ProjectRef, ProjectProps>(function Project(
 
   return (
     <section className={style['project']} ref={projectRef}>
+      {/* 标题 */}
       <header className={style['title']}>Projects</header>
+
+      {/* 项目列表 */}
       <ProjectItemList ref={projectItemListRef} />
-      <More className={style['more']} onClick={onScrollTo} />
+
+      {/* 滚动到下个部分 */}
+      <More className={style['more']} onClick={onScrollToRef} />
     </section>
   )
 })

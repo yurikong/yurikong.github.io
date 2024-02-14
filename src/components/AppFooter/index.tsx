@@ -9,7 +9,7 @@ import style from './index.module.css'
 
 /**
  * 页脚
- * @returns {JSX.Element} the `AppFooter` component
+ * @returns {JSX.Element} `AppFooter` 组件
  */
 export const AppFooter = (): JSX.Element => {
   const year = new Date().getFullYear()
@@ -37,12 +37,14 @@ export const AppFooter = (): JSX.Element => {
 
   return (
     <footer className={style['footer']}>
+      {/* 版权 */}
       <div className={style['copyright']}>
         <RiCopyrightLine />
         <span>{year}</span>
         <span>Jianqiang Du</span>
       </div>
 
+      {/* 社交平台 */}
       <ul className={style['social-links']}>
         {socialLinks.map<JSX.Element>((item: SocialLinkProps, i: number) => (
           <li key={i}>
@@ -51,6 +53,7 @@ export const AppFooter = (): JSX.Element => {
         ))}
       </ul>
 
+      {/* 应用信息 */}
       <div className={style['info']}>
         <span>Site built with</span>
         <SocialLink

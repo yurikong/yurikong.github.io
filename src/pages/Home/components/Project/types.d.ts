@@ -1,7 +1,7 @@
 import type { MouseEventHandler } from 'react'
 
 export interface ProjectProps {
-  onScrollTo?: MouseEventHandler<HTMLButtonElement> | undefined
+  onScrollToRef: MouseEventHandler<HTMLElement>
 }
 
 export interface ProjectRef {

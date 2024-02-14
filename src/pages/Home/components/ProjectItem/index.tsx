@@ -7,11 +7,11 @@ export type { ProjectItemProps, ProjectItemRef }
 
 /**
  * 项目
- * @param {ProjectItemProps} props component props
- * @param {ProjectItemProps['imgSrc']} props.imgSrc image url
- * @param {ProjectItemProps['details']} props.details details
- * @param {ProjectItemProps['className']} props.className parent assigned className, default is `undefined`
- * @returns {JSX.Element} the `ProjectItem` component
+ * @param {ProjectItemProps} props 组件入参
+ * @param {ProjectItemProps['imgSrc']} props.imgSrc 图片地址
+ * @param {ProjectItemProps['details']} props.details 项目信息
+ * @param {ProjectItemProps['className']} props.className 样式
+ * @returns {JSX.Element} `ProjectItem` 组件
  */
 export const ProjectItem = forwardRef<ProjectItemRef, ProjectItemProps>(
   function ProjectItem({ imgSrc, details, className = '' }, ref): JSX.Element {
@@ -40,10 +40,12 @@ export const ProjectItem = forwardRef<ProjectItemRef, ProjectItemProps>(
 
     return (
       <li className={fullClassName} ref={projectItemRef}>
+        {/* 项目图片 */}
         <div className={style['img-wrapper']}>
           <img src={imgSrc} alt='Project cover.' />
         </div>
 
+        {/* 项目信息 */}
         <ProjectItemDetails {...details} />
       </li>
     )

@@ -6,9 +6,9 @@ export type { ProjectItemTagStackProps }
 
 /**
  * 技术栈
- * @param {ProjectItemTagStackProps} props component props
- * @param {ProjectItemTagStackProps['data']} props.data tech stack
- * @returns {JSX.Element} the `ProjectItemTechStack` component
+ * @param {ProjectItemTagStackProps} props 组件入参
+ * @param {ProjectItemTagStackProps['data']} props.data 使用的技术栈
+ * @returns {JSX.Element} `ProjectItemTechStack` 组件
  */
 export const ProjectItemTechStack = ({
   data,

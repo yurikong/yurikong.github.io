@@ -7,10 +7,10 @@ export type { WorkItemJobYearsProps }
 
 /**
  * 工作年份
- * @param {WorkItemJobYearsProps} props component props
- * @param {WorkItemJobYearsProps['startYear']} props.startYear start year
- * @param {WorkItemJobYearsProps['endYear']} [props.endYear] end year, default is `undefined`
- * @returns {JSX.Element} the `WorkItemJobYears` component
+ * @param {WorkItemJobYearsProps} props 组件入参
+ * @param {WorkItemJobYearsProps['startYear']} props.startYear 开始年份
+ * @param {WorkItemJobYearsProps['endYear']} [props.endYear] 结束年份，默认为 `undefined`
+ * @returns {JSX.Element} `WorkItemJobYears` 组件
  */
 export const WorkItemJobYears = ({
   startYear,
@@ -19,7 +19,10 @@ export const WorkItemJobYears = ({
   return (
     <div className={style['work-item-job-years']}>
       <div className={style['job-years']}>
+        {/* 开始年份 */}
         <span>{startYear}</span>
+
+        {/* 结束年份 */}
         {startYear !== endYear && (
           <>
             <RiSubtractLine />

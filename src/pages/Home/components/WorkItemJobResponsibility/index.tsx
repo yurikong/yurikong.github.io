@@ -6,9 +6,9 @@ export type { WorkItemJobResponsibilityProps }
 
 /**
  * 工作职责
- * @param {WorkItemJobResponsibilityProps} props component props
- * @param {WorkItemJobResponsibilityProps['responsibility']} props.responsibility responsibility
- * @returns {JSX.Element} the `WorkItemJobResponsibility` component
+ * @param {WorkItemJobResponsibilityProps} props 组件入参
+ * @param {WorkItemJobResponsibilityProps['responsibility']} props.responsibility 工作职责
+ * @returns {JSX.Element} `WorkItemJobResponsibility` 组件
  */
 export const WorkItemJobResponsibility = ({
   responsibility,
