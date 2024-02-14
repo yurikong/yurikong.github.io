@@ -13,14 +13,14 @@ export type { AppLinkProps }
  * @param {AppLinkProps['external']} [props.external] external link, default is `false`
  * @param {AppLinkProps['text']} props.text text
  * @param {AppLinkProps['to']} [props.to] href, required when `external` is `true`
- * @param {AppLinkProps['scrollIntoViewRef']} [props.scrollIntoViewRef] target ref to call `scrollIntoView`, required when `external` is `false` or `undefined`
+ * @param {AppLinkProps['onClick']} [props.onClick] click handler
  * @returns {JSX.Element} the `AppLink` component
  */
 export const AppLink = ({
   external = false,
   text,
   to,
-  // scrollIntoViewRef,
+  onClick,
 }: AppLinkProps): JSX.Element => {
   return (
     <Link
@@ -28,6 +28,7 @@ export const AppLink = ({
       to={external ? to! : '#'}
       target={external ? '_blank' : '_self'}
       referrerPolicy='no-referrer'
+      onClick={onClick}
     >
       {!external && <RiLinksLine />}
       <span>{text}</span>

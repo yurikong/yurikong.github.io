@@ -9,7 +9,7 @@ export type { MoreProps }
  * 往下更多
  * @param {MoreProps} props component props
  * @param {MoreProps['className']} props.className class applied by parent, default is `undefined`
- * @param {MoreProps['scrollIntoViewRef']} props.scrollIntoViewRef target ref to call `scrollIntoView`
+ * @param {MoreProps['onClick']} props.onClick click handler
  * @returns {JSX.Element} the `More` component
  */
 export const More = ({ onClick, className = '' }: MoreProps): JSX.Element => {

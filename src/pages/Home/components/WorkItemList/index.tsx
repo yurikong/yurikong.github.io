@@ -1,13 +1,19 @@
 import type { JSX } from 'react'
-import { WorkItem, type WorkItemProps } from '../WorkItem'
+import type { WorkItemListProps, WorkItemData } from './types'
+import { WorkItem } from '../WorkItem'
 import style from './index.module.css'
 
 /**
  * 工作列表
+ * @param {WorkItemListProps} props 组件入参
+ * @param {WorkItemListProps['scrollToProject']} props.scrollToProject 滚动到指定项目
  * @returns {JSX.Element} the `WorkItemList` component
  */
-export const WorkItemList = (): JSX.Element => {
-  const data: WorkItemProps[] = [
+export const WorkItemList = ({
+  scrollToProject,
+}: WorkItemListProps): JSX.Element => {
+  // 工作数据
+  const data: WorkItemData[] = [
     {
       jobYears: {
         startYear: 2023,
@@ -27,7 +33,6 @@ export const WorkItemList = (): JSX.Element => {
       relatedProjects: [
         {
           text: 'Sacmi Digital Printer Client',
-          scrollIntoViewRef: undefined, // TODO: fix this
         },
       ],
     },
@@ -51,7 +56,6 @@ export const WorkItemList = (): JSX.Element => {
       relatedProjects: [
         {
           text: 'COA Generator',
-          scrollIntoViewRef: undefined, // TODO: fix this
         },
       ],
     },
@@ -75,11 +79,9 @@ export const WorkItemList = (): JSX.Element => {
       relatedProjects: [
         {
           text: 'Digifly',
-          scrollIntoViewRef: undefined, // TODO: fix this
         },
         {
           text: 'Big Data Management Platform',
-          scrollIntoViewRef: undefined, // TODO: fix this
         },
       ],
     },
@@ -87,8 +89,13 @@ export const WorkItemList = (): JSX.Element => {
 
   return (
     <ul>
-      {data.map<JSX.Element>((item: WorkItemProps, i: number) => (
-        <WorkItem className={style['work-item']} key={i} {...item} />
+      {data.map<JSX.Element>((item: WorkItemData, i: number) => (
+        <WorkItem
+          className={style['work-item']}
+          key={i}
+          {...item}
+          scrollToProject={scrollToProject}
+        />
       ))}
     </ul>
   )

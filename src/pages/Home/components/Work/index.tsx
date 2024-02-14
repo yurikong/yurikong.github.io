@@ -8,12 +8,13 @@ export type { WorkProps, WorkRef }
 
 /**
  * 工作
- * @param {WorkProps} props component props
- * @param {WorkProps['onScrollTo']} props.onScrollTo click handler for scrolling to a `ref`
+ * @param {WorkProps} props 组件入参
+ * @param {WorkProps['onScrollTo']} props.onScrollTo 处理 `More` 组件的 `onClick`
+ * @param {WorkProps['scrollToProject']} props.scrollToProject 滚动到指定项目
  * @returns {JSX.Element} the `Work` component
  */
 export const Work = forwardRef<WorkRef, WorkProps>(function Work(
-  { onScrollTo },
+  { onScrollTo, scrollToProject },
   ref
 ): JSX.Element {
   const workRef = useRef<HTMLElement | null>(null)
@@ -35,7 +36,7 @@ export const Work = forwardRef<WorkRef, WorkProps>(function Work(
   return (
     <section className={style['work']} ref={workRef}>
       <header className={style['title']}>Work</header>
-      <WorkItemList />
+      <WorkItemList scrollToProject={scrollToProject} />
       <More className={style['more']} onClick={onScrollTo} />
     </section>
   )

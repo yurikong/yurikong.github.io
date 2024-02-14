@@ -8,5 +8,6 @@ export interface WorkItemProps {
   jobPosition: WorkItemJobPositionProps
   jobResponsibility: WorkItemJobResponsibilityProps
   relatedProjects?: AppLinkProps[] | undefined
+  scrollToProject: (projectName: string) => void
   className?: string | undefined
 }

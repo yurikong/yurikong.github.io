@@ -8,19 +8,27 @@ export type { WorkItemProjectListProps }
 
 /**
  * 关联项目标签
- * @param {WorkItemProjectListProps} props component props
- * @param {WorkItemProjectListProps['data']} props.data related projects
+ * @param {WorkItemProjectListProps} props 组件入参
+ * @param {WorkItemProjectListProps['data']} props.data 项目列表
+ * @param {WorkItemProjectListProps['scrollToProject']} props.scrollToProject 滚动到指定项目
  * @returns {JSX.Element} the `WorkItemProjectList` component
  */
 export const WorkItemProjectList = ({
   data,
+  scrollToProject,
 }: WorkItemProjectListProps): JSX.Element => {
   return (
     <ul className={style['work-item-project-list']}>
       {data.map<JSX.Element>((item: AppLinkProps, i: number) => {
         return (
           <li key={i}>
-            <AppLink {...item} />
+            <AppLink
+              {...item}
+              onClick={(e) => {
+                e.preventDefault()
+                scrollToProject(item.text)
+              }}
+            />
           </li>
         )
       })}

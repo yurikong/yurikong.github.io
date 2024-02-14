@@ -19,11 +19,19 @@ export const Component = (): JSX.Element => {
   const projectRef = useRef<ProjectRef | null>(null)
 
   /**
-   * 滚动
+   * 滚动当前组件
    * @param {ScrollToRef} ref target ref
    */
   const handleScrollTo = (ref: ScrollToRef): void => {
     ref.current?.scrollIntoView({ behavior: 'smooth' })
+  }
+
+  /**
+   * 滚动到指定项目
+   * @param {string} projectName 项目名称
+   */
+  const scrollToProject = (projectName: string): void => {
+    projectRef.current?.scrollToProject(projectName, { behavior: 'smooth' })
   }
 
   return (
@@ -39,6 +47,7 @@ export const Component = (): JSX.Element => {
         onScrollTo={() => {
           handleScrollTo(projectRef)
         }}
+        scrollToProject={scrollToProject}
       />
       <Project
         ref={projectRef}
