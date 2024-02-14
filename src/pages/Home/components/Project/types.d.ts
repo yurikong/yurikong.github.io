@@ -1,5 +1,9 @@
-import type { MutableRefObject } from 'react'
+import type { MouseEventHandler } from 'react'
 
 export interface ProjectProps {
-  scrollIntoViewRef: MutableRefObject<HTMLElement | null>
+  onScrollTo?: MouseEventHandler<HTMLButtonElement> | undefined
+}
+
+export interface ProjectRef {
+  scrollIntoView: (arg?: boolean | ScrollIntoViewOptions | undefined) => void
 }
