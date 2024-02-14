@@ -44,13 +44,11 @@ export const AppFooter = (): JSX.Element => {
       </div>
 
       <ul className={style['social-links']}>
-        {socialLinks.map(
-          (item: SocialLinkProps, i: number): JSX.Element => (
-            <li key={i}>
-              <SocialLink className={style['social-link']} {...item} />
-            </li>
-          )
-        )}
+        {socialLinks.map<JSX.Element>((item: SocialLinkProps, i: number) => (
+          <li key={i}>
+            <SocialLink className={style['social-link']} {...item} />
+          </li>
+        ))}
       </ul>
 
       <div className={style['info']}>

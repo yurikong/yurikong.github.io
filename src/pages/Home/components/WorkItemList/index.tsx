@@ -87,11 +87,9 @@ export const WorkItemList = (): JSX.Element => {
 
   return (
     <ul>
-      {data.map(
-        (item: WorkItemProps, i: number): JSX.Element => (
-          <WorkItem className={style['work-item']} key={i} {...item} />
-        )
-      )}
+      {data.map<JSX.Element>((item: WorkItemProps, i: number) => (
+        <WorkItem className={style['work-item']} key={i} {...item} />
+      ))}
     </ul>
   )
 }

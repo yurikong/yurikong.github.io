@@ -17,7 +17,7 @@ export const WorkItemProjectList = ({
 }: WorkItemProjectListProps): JSX.Element => {
   return (
     <ul className={style['work-item-project-list']}>
-      {data.map((item: AppLinkProps, i: number): JSX.Element => {
+      {data.map<JSX.Element>((item: AppLinkProps, i: number) => {
         return (
           <li key={i}>
             <AppLink {...item} />

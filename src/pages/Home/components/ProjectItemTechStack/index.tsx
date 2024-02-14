@@ -15,11 +15,9 @@ export const ProjectItemTechStack = ({
 }: ProjectItemTagStackProps): JSX.Element => {
   return (
     <ul className={style['tech-stack']}>
-      {data.map(
-        (text: string, i: number): JSX.Element => (
-          <li key={i}>{text}</li>
-        )
-      )}
+      {data.map<JSX.Element>((text: string, i: number) => (
+        <li key={i}>{text}</li>
+      ))}
     </ul>
   )
 }
