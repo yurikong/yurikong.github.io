@@ -4,6 +4,8 @@ import type { AppLinkProps } from '@/components/AppLink/types'
 import { AppLink } from '@/components'
 import style from './index.module.css'
 
+export type { WorkItemProjectListProps }
+
 /**
  * 关联项目标签
  * @param {WorkItemProjectListProps} props component props

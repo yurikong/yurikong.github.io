@@ -3,6 +3,8 @@ import type { WorkItemJobPositionProps } from './types'
 import { AppLink } from '@/components'
 import style from './index.module.css'
 
+export type { WorkItemJobPositionProps }
+
 /**
  * 工作岗位
  * @param {WorkItemJobPositionProps} props component props

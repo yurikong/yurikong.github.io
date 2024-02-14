@@ -1,8 +1,10 @@
 import { type JSX, forwardRef } from 'react'
 import type { ProjectProps } from './types'
-import { ProjectItemList } from '..'
+import { ProjectItemList } from '../ProjectItemList'
 import { More } from '@/components'
 import style from './index.module.css'
+
+export type { ProjectProps }
 
 /**
  * 项目

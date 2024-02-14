@@ -1,7 +1,9 @@
 import type { JSX } from 'react'
 import type { ProjectItemProps } from './types'
-import { ProjectItemDetails } from '..'
+import { ProjectItemDetails } from '../ProjectItemDetails'
 import style from './index.module.css'
+
+export type { ProjectItemProps }
 
 /**
  * 项目

@@ -3,6 +3,8 @@ import type { WorkItemJobYearsProps } from './types'
 import RiSubtractLine from '~icons/ri/subtract-line'
 import style from './index.module.css'
 
+export type { WorkItemJobYearsProps }
+
 /**
  * 工作年份
  * @param {WorkItemJobYearsProps} props component props

@@ -1,8 +1,10 @@
 import { type JSX, forwardRef } from 'react'
 import type { WorkProps } from './types'
-import { WorkItemList } from '..'
+import { WorkItemList } from '../WorkItemList'
 import { More } from '@/components'
 import style from './index.module.css'
+
+export type { WorkProps }
 
 /**
  * 工作

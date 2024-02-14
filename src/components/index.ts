@@ -1,5 +1,4 @@
 export { AppHeader } from './AppHeader'
 export { AppFooter } from './AppFooter'
-export { AppLink } from './AppLink'
-export { More } from './More'
-export { Tag } from './Tag'
+export { AppLink, type AppLinkProps } from './AppLink'
+export { More, type MoreProps } from './More'

@@ -4,6 +4,8 @@ import RiArrowDownDoubleLine from '~icons/ri/arrow-down-double-line'
 import { scrollIntoView } from '@/utils'
 import style from './index.module.css'
 
+export type { MoreProps }
+
 /**
  * 往下更多
  * @param {MoreProps} props component props

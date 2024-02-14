@@ -1,7 +1,9 @@
 import type { JSX } from 'react'
 import type { ProjectItemDetailsProps } from './types'
-import { ProjectItemTechStack } from '..'
+import { ProjectItemTechStack } from '../ProjectItemTechStack'
 import style from './index.module.css'
+
+export type { ProjectItemDetailsProps }
 
 /**
  * 项目信息

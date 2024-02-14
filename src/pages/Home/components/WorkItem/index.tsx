@@ -1,12 +1,12 @@
 import type { JSX } from 'react'
 import type { WorkItemProps } from './types'
-import {
-  WorkItemJobYears,
-  WorkItemJobPosition,
-  WorkItemJobResponsibility,
-  WorkItemProjectList,
-} from '..'
+import { WorkItemJobYears } from '../WorkItemJobYears'
+import { WorkItemJobPosition } from '../WorkItemJobPosition'
+import { WorkItemJobResponsibility } from '../WorkItemJobResponsibility'
+import { WorkItemProjectList } from '../WorkItemProjectList'
 import style from './index.module.css'
+
+export type { WorkItemProps }
 
 /**
  * 工作

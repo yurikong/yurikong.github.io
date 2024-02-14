@@ -5,6 +5,8 @@ import RiLinksLine from '~icons/ri/links-line'
 import RiExternalLinkLine from '~icons/ri/external-link-line'
 import style from './index.module.css'
 
+export type { AppLinkProps }
+
 /**
  * 应用链接
  * @param {AppLinkProps} props component props

@@ -3,6 +3,8 @@ import type { IntroProps } from './types'
 import { More } from '@/components'
 import style from './index.module.css'
 
+export type { IntroProps }
+
 /**
  * 开场白
  * @param {IntroProps} props component props

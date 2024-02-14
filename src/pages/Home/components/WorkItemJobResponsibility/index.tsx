@@ -2,6 +2,8 @@ import type { JSX } from 'react'
 import type { WorkItemJobResponsibilityProps } from './types'
 import style from './index.module.css'
 
+export type { WorkItemJobResponsibilityProps }
+
 /**
  * 工作职责
  * @param {WorkItemJobResponsibilityProps} props component props

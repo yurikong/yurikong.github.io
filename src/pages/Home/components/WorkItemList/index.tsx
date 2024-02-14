@@ -1,6 +1,5 @@
 import type { JSX } from 'react'
-import type { WorkItemProps } from '../WorkItem/types'
-import { WorkItem } from '..'
+import { WorkItem, type WorkItemProps } from '../WorkItem'
 import style from './index.module.css'
 
 /**

@@ -1,6 +1,5 @@
 import type { JSX } from 'react'
-import type { ProjectItemProps } from '../ProjectItem/types'
-import { ProjectItem } from '..'
+import { ProjectItem, type ProjectItemProps } from '../ProjectItem'
 import style from './index.module.css'
 
 /**
