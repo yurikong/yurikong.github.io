@@ -1,5 +1,6 @@
 import { type JSX, forwardRef, useRef, useImperativeHandle } from 'react'
 import type { ProjectItemProps, ProjectItemRef } from './types'
+import { Image } from '@/components'
 import { ProjectItemDetails } from '../ProjectItemDetails'
 import style from './index.module.css'
 
@@ -8,13 +9,13 @@ export type { ProjectItemProps, ProjectItemRef }
 /**
  * 项目
  * @param {ProjectItemProps} props 组件入参
- * @param {ProjectItemProps['imgSrc']} props.imgSrc 图片地址
+ * @param {ProjectItemProps['imgName']} props.imgName 图片名称
  * @param {ProjectItemProps['details']} props.details 项目信息
  * @param {ProjectItemProps['className']} props.className 样式
  * @returns {JSX.Element} `ProjectItem` 组件
  */
 export const ProjectItem = forwardRef<ProjectItemRef, ProjectItemProps>(
-  function ProjectItem({ imgSrc, details, className = '' }, ref): JSX.Element {
+  function ProjectItem({ imgName, details, className = '' }, ref): JSX.Element {
     const projectItemRef = useRef<HTMLLIElement | null>(null)
 
     // 暴露给父组件的方法
@@ -41,9 +42,13 @@ export const ProjectItem = forwardRef<ProjectItemRef, ProjectItemProps>(
     return (
       <li className={fullClassName} ref={projectItemRef}>
         {/* 项目图片 */}
-        <div className={style['img-wrapper']}>
-          <img src={imgSrc} alt='Project cover.' />
-        </div>
+        <Image
+          className={style['image']}
+          name={imgName}
+          alt='cover'
+          watermark
+          watermarkText='Jianqiang Du'
+        />
 
         {/* 项目信息 */}
         <ProjectItemDetails {...details} />
