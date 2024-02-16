@@ -1,7 +1,7 @@
 import { type JSX, forwardRef, useRef, useImperativeHandle } from 'react'
 import type { ProjectProps, ProjectRef } from './types'
 import { ProjectItemList, type ProjectItemListRef } from '../ProjectItemList'
-import { More } from '@/components'
+import { StickyHeader, More } from '@/components'
 import style from './index.module.css'
 
 export type { ProjectProps, ProjectRef }
@@ -53,13 +53,15 @@ export const Project = forwardRef<ProjectRef, ProjectProps>(function Project(
   return (
     <section className={style['project']} ref={projectRef}>
       {/* 标题 */}
-      <header className={style['title']}>Projects</header>
+      <StickyHeader title='Project' />
 
-      {/* 项目列表 */}
-      <ProjectItemList ref={projectItemListRef} />
+      <div className={style['content']}>
+        {/* 项目列表 */}
+        <ProjectItemList ref={projectItemListRef} />
 
-      {/* 滚动到下个部分 */}
-      <More className={style['more']} onClick={onScrollToRef} />
+        {/* 滚动到下个部分 */}
+        <More className={style['more']} onClick={onScrollToRef} />
+      </div>
     </section>
   )
 })

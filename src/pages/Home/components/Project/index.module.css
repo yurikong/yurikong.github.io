@@ -1,29 +1,20 @@
 .project {
-  --gap: 4svh;
-  --padding-top: var(--gap);
+  --padding-top: 4svh;
   --padding-bottom: 15svh;
 
   position: relative;
   min-height: 100svh;
-  padding-block: var(--padding-top) var(--padding-bottom);
-  padding-inline: var(--padding-inline);
 }
 
-.title {
-  position: sticky;
-  z-index: 1;
-  top: 0;
-  background-color: var(--white);
-  color: var(--text-primary);
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin-block-end: var(--gap);
-  padding-block: var(--gap-8);
+.content {
+  position: relative;
+  padding-block: var(--padding-top) var(--padding-bottom);
+  padding-inline: var(--padding-inline);
 }
 
 .more {
   position: absolute;
   bottom: var(--padding-bottom);
-  left: 50svw;
+  left: 50%;
   transform: translateX(-50%) translateY(100%);
 }

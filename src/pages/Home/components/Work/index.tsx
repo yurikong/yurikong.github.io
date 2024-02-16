@@ -1,7 +1,7 @@
 import { type JSX, forwardRef, useRef, useImperativeHandle } from 'react'
 import type { WorkProps, WorkRef } from './types'
 import { WorkItemList } from '../WorkItemList'
-import { More } from '@/components'
+import { StickyHeader, More } from '@/components'
 import style from './index.module.css'
 
 export type { WorkProps, WorkRef }
@@ -41,13 +41,15 @@ export const Work = forwardRef<WorkRef, WorkProps>(function Work(
   return (
     <section className={style['work']} ref={workRef}>
       {/* 标题 */}
-      <header className={style['title']}>Work</header>
+      <StickyHeader title='Work' />
 
-      {/* 工作列表 */}
-      <WorkItemList scrollToProject={scrollToProject} />
+      <div className={style['content']}>
+        {/* 工作列表 */}
+        <WorkItemList scrollToProject={scrollToProject} />
 
-      {/* 滚动到下个部分 */}
-      <More className={style['more']} onClick={onScrollToRef} />
+        {/* 滚动到下个部分 */}
+        <More className={style['more']} onClick={onScrollToRef} />
+      </div>
     </section>
   )
 })
