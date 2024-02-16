@@ -1,9 +1,27 @@
 .intro {
-  --padding-top: 25svh;
+  position: relative;
+  display: flex;
+  height: 100svh;
+  flex-direction: column;
+}
+
+.header {
+  --height: 10svh;
+
+  font-size: 2.4rem;
+}
+
+.logo {
+  line-height: var(--height);
+  padding-inline: var(--padding-inline);
+}
+
+.content {
+  --padding-top: 20svh;
   --padding-bottom: 15svh;
 
   position: relative;
-  height: 100svh;
+  flex: auto;
   padding-block: var(--padding-top) var(--padding-bottom);
   padding-inline: var(--padding-inline);
 }
@@ -20,6 +38,6 @@ h2 {
 .more {
   position: absolute;
   bottom: var(--padding-bottom);
-  left: 50svw;
-  transform: translateX(-50%) translateY(100%);
+  left: 50%;
+  transform: translate(-50%, 100%);
 }

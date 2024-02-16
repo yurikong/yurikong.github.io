@@ -1,6 +1,7 @@
 import { type JSX, forwardRef, useRef, useImperativeHandle } from 'react'
 import type { IntroProps, IntroRef } from './types'
-import { More } from '@/components'
+import { Link } from 'react-router-dom'
+import { StickyHeader, More } from '@/components'
 import style from './index.module.css'
 
 export type { IntroProps, IntroRef }
@@ -33,14 +34,28 @@ export const Intro = forwardRef<IntroRef, IntroProps>(function Intro(
 
   return (
     <section className={style['intro']} ref={introRef}>
-      {/* 打招呼 */}
-      <h1>Hi, I&apos;m Jack!</h1>
+      {/* 标题 */}
+      <StickyHeader
+        className={style['header']}
+        slots={{
+          title: (
+            <Link className={style['logo']} to='/'>
+              Jack
+            </Link>
+          ),
+        }}
+      />
 
-      {/* 一句话形容自己 */}
-      <h2>I am a front-end developer who loves a good latte.</h2>
+      <div className={style['content']}>
+        {/* 打招呼 */}
+        <h1>Hi, I&apos;m Jack!</h1>
 
-      {/* 滚动到下个部分 */}
-      <More className={style['more']} onClick={onScrollToRef} />
+        {/* 一句话形容自己 */}
+        <h2>I am a front-end developer who loves a good latte.</h2>
+
+        {/* 滚动到下个部分 */}
+        <More className={style['more']} onClick={onScrollToRef} />
+      </div>
     </section>
   )
 })
