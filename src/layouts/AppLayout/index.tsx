@@ -1,6 +1,6 @@
 import type { JSX } from 'react'
 import { Outlet } from 'react-router-dom'
-import { AppHeader, AppFooter } from '@/components'
+import { AppFooter } from '@/components'
 
 /**
  * 布局
@@ -9,8 +9,6 @@ import { AppHeader, AppFooter } from '@/components'
 export const AppLayout = (): JSX.Element => {
   return (
     <>
-      <AppHeader />
-
       <main>
         <Outlet />
       </main>

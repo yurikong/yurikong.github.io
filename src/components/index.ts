@@ -1,4 +1,3 @@
-export { AppHeader } from './AppHeader'
 export { AppFooter } from './AppFooter'
 export { AppLink, type AppLinkProps } from './AppLink'
 export { BackTop, type BackTopProps } from './BackTop'
