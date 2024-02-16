@@ -14,7 +14,7 @@ export const ProjectItemList = forwardRef<ProjectItemListRef>(
     // 项目数据
     const data: ProjectItemProps[] = [
       {
-        imgName: 'sdpc.png',
+        imgName: 'sdpc/1.png',
         details: {
           name: 'Sacmi Digital Printer Client',
           description:
@@ -23,7 +23,7 @@ export const ProjectItemList = forwardRef<ProjectItemListRef>(
         },
       },
       {
-        imgName: 'sdpc.png',
+        imgName: 'coa-generator/1.png',
         details: {
           name: 'COA Generator',
           description:
@@ -32,7 +32,7 @@ export const ProjectItemList = forwardRef<ProjectItemListRef>(
         },
       },
       {
-        imgName: 'sdpc.png',
+        imgName: 'sdpc/1.png',
         details: {
           name: 'Digifly',
           description:
@@ -41,7 +41,7 @@ export const ProjectItemList = forwardRef<ProjectItemListRef>(
         },
       },
       {
-        imgName: 'sdpc.png',
+        imgName: 'sdpc/1.png',
         details: {
           name: 'Big Data Management Platform',
           description: 'CRM on the web. For bank internal use only.',
