@@ -14,7 +14,7 @@
   opacity: 0.5;
   pointer-events: none;
   text-align: center;
-  transform: rotate(-10deg);
+  transform: rotate(-10deg) scale(1.5);
 }
 
 img {
