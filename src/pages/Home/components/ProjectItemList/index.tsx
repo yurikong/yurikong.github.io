@@ -32,7 +32,7 @@ export const ProjectItemList = forwardRef<ProjectItemListRef>(
         },
       },
       {
-        imgName: 'sdpc/1.png',
+        imgName: 'digifly/1.png',
         details: {
           name: 'Digifly',
           description:
@@ -41,7 +41,7 @@ export const ProjectItemList = forwardRef<ProjectItemListRef>(
         },
       },
       {
-        imgName: 'sdpc/1.png',
+        imgName: 'bmp/1.png',
         details: {
           name: 'Big Data Management Platform',
           description: 'CRM on the web. For bank internal use only.',
