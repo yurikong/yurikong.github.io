@@ -5,16 +5,16 @@
 
 .watermark::after {
   position: absolute;
-  bottom: 10%;
+  top: 50%;
   width: 100%;
   color: var(--text-tertiary);
   content: attr(data-watermark-text);
   font-size: 3.2rem;
   font-weight: bold;
-  opacity: 0.2;
+  opacity: 0.5;
   pointer-events: none;
   text-align: center;
-  transform: rotate(-5deg) scale(1.5);
+  transform: rotate(-10deg);
 }
 
 img {
