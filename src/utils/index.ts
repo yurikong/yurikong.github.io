@@ -6,3 +6,10 @@
 export const getImageUrl = (name: string): string => {
   return new URL(`../assets/${name}`, import.meta.url).href
 }
+
+/**
+ * 平滑滚动到最顶部
+ */
+export const scrollToTop = (): void => {
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+}

@@ -2,6 +2,7 @@ import { type JSX, forwardRef, useRef, useImperativeHandle } from 'react'
 import type { IntroProps, IntroRef } from './types'
 import { Link } from 'react-router-dom'
 import { StickyHeader, More } from '@/components'
+import { scrollToTop } from '@/utils'
 import style from './index.module.css'
 
 export type { IntroProps, IntroRef }
@@ -39,7 +40,14 @@ export const Intro = forwardRef<IntroRef, IntroProps>(function Intro(
         className={style['header']}
         slots={{
           title: (
-            <Link className={style['logo']} to='/'>
+            <Link
+              className={style['logo']}
+              to='/'
+              onClick={(e) => {
+                e.preventDefault()
+                scrollToTop()
+              }}
+            >
               Jack
             </Link>
           ),
