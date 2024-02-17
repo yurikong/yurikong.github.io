@@ -80,5 +80,27 @@ body {
 }
 
 #root {
+  position: relative; /* TODO: 完成屏幕适配时删除 */
   background-color: var(--white);
+}
+
+/* TODO: 完成屏幕适配时删除 */
+#bottom-banner {
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  padding: 2svh var(--padding-inline);
+  border-top: 2px solid pink;
+  backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  background-color: rgb(255 192 203 / 25%);
+  color: crimson;
+  font-size: 1.6rem;
+}
+
+#bottom-banner > button {
+  color: crimson;
 }
