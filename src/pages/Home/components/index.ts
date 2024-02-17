@@ -1,7 +1,4 @@
-export { Intro } from './Intro'
-export { Work } from './Work'
-export { Project } from './Project'
-
-export type { IntroProps, IntroRef } from './Intro'
-export type { WorkProps, WorkRef } from './Work'
-export type { ProjectProps, ProjectRef } from './Project'
+export { Intro, type IntroProps, type IntroRef } from './Intro'
+export { Work, type WorkProps, type WorkRef } from './Work'
+export { Project, type ProjectProps, type ProjectRef } from './Project'
+export { About, type AboutRef } from './About'

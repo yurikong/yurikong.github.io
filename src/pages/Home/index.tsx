@@ -4,9 +4,11 @@ import {
   type IntroRef,
   type WorkRef,
   type ProjectRef,
+  type AboutRef,
   Intro,
   Work,
   Project,
+  About,
 } from './components'
 
 /**
@@ -17,6 +19,7 @@ export const Component = (): JSX.Element => {
   const introRef = useRef<IntroRef | null>(null)
   const workRef = useRef<WorkRef | null>(null)
   const projectRef = useRef<ProjectRef | null>(null)
+  const aboutRef = useRef<AboutRef | null>(null)
 
   /**
    * 滚动到指定组件
@@ -55,6 +58,7 @@ export const Component = (): JSX.Element => {
           scrollToRef(introRef)
         }}
       />
+      <About ref={aboutRef} />
     </>
   )
 }
