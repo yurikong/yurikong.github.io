@@ -60,7 +60,7 @@ export const AppFooter = (): JSX.Element => {
           title='React'
           href='https://react.dev'
           child={
-            <div className={style['engine']}>
+            <div className={style['react']}>
               <RiReactjsLine />
               <span>React.js</span>
             </div>
