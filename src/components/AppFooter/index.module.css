@@ -1,6 +1,16 @@
 .footer {
+  position: relative;
   padding: 5svh var(--padding-inline);
   font-size: 1.6rem;
+}
+
+.footer::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid var(--border-dark);
+  content: '';
 }
 
 .copyright {

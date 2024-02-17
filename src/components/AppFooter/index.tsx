@@ -1,4 +1,4 @@
-import { type JSX } from 'react'
+import type { JSX } from 'react'
 import { SocialLink, type SocialLinkProps } from '@/components'
 import RiCopyrightLine from '~icons/ri/copyright-line'
 import RiMailLine from '~icons/ri/mail-line'
