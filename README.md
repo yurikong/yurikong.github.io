@@ -13,6 +13,7 @@
 - 国际化
 - 主流尺寸适配，移动优先，设置页面最大宽度
 - 水印用PS合到图片上面
+- 浏览器兼容(postcss-preset-env / autoprefixer)
 
 ## Roadmap
 
