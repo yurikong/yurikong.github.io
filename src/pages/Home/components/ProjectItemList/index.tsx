@@ -1,6 +1,6 @@
 import { type JSX, forwardRef, useImperativeHandle } from 'react'
-import { ProjectItem, type ProjectItemProps } from '../ProjectItem'
 import type { NamedProjectItemRef, ProjectItemListRef } from './types'
+import { ProjectItem, type ProjectItemProps } from '../ProjectItem'
 import style from './index.module.css'
 
 export type { NamedProjectItemRef, ProjectItemListRef }
@@ -68,7 +68,7 @@ export const ProjectItemList = forwardRef<ProjectItemListRef>(
           /**
            * 滚动到指定项目
            * @param {string} projectName 项目名称
-           * @param {boolean | ScrollIntoViewOptions | undefined} arg 滚动选项
+           * @param {boolean | ScrollIntoViewOptions | undefined} [arg] 滚动选项
            */
           scrollToProjectItem(
             projectName: string,

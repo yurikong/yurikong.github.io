@@ -10,7 +10,7 @@ export type { ProjectItemDetailsProps }
  * @param {ProjectItemDetailsProps} props 组件入参
  * @param {ProjectItemDetailsProps['name']} props.name 项目名称
  * @param {ProjectItemDetailsProps['description']} props.description 项目描述
- * @param {ProjectItemDetailsProps['techStack']} props.techStack 使用技术栈
+ * @param {ProjectItemDetailsProps['techStack']} [props.techStack] 使用技术栈
  * @returns {JSX.Element} `ProjectItemDetails` 组件
  */
 export const ProjectItemDetails = ({

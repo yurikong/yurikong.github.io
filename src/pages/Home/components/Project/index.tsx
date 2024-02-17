@@ -1,7 +1,7 @@
 import { type JSX, forwardRef, useRef, useImperativeHandle } from 'react'
 import type { ProjectRef } from './types'
-import { ProjectItemList, type ProjectItemListRef } from '../ProjectItemList'
 import { StickyHeader, BackTop } from '@/components'
+import { ProjectItemList, type ProjectItemListRef } from '../ProjectItemList'
 import style from './index.module.css'
 
 export type { ProjectRef }
@@ -22,7 +22,7 @@ export const Project = forwardRef<ProjectRef>(
         return {
           /**
            * 滚动到该组件
-           * @param {boolean | ScrollIntoViewOptions | undefined} arg 滚动选项
+           * @param {boolean | ScrollIntoViewOptions | undefined} [arg] 滚动选项
            */
           scrollIntoView(
             arg?: boolean | ScrollIntoViewOptions | undefined
@@ -33,7 +33,7 @@ export const Project = forwardRef<ProjectRef>(
           /**
            * 滚动到指定项目
            * @param {string} projectName 项目名称
-           * @param {boolean | ScrollIntoViewOptions | undefined} arg 滚动选项
+           * @param {boolean | ScrollIntoViewOptions | undefined} [arg] 滚动选项
            */
           scrollToProject(
             projectName: string,

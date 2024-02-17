@@ -1,7 +1,7 @@
 import { type JSX, forwardRef, useRef, useImperativeHandle } from 'react'
 import type { WorkProps, WorkRef } from './types'
-import { WorkItemList } from '../WorkItemList'
 import { StickyHeader, More } from '@/components'
+import { WorkItemList } from '../WorkItemList'
 import style from './index.module.css'
 
 export type { WorkProps, WorkRef }
@@ -26,7 +26,7 @@ export const Work = forwardRef<WorkRef, WorkProps>(function Work(
       return {
         /**
          * 滚动到当前组件
-         * @param {boolean | ScrollIntoViewOptions | undefined} arg 滚动选项
+         * @param {boolean | ScrollIntoViewOptions | undefined} [arg] 滚动选项
          */
         scrollIntoView(
           arg?: boolean | ScrollIntoViewOptions | undefined

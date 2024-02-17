@@ -3,7 +3,7 @@ import { RouterProvider } from 'react-router-dom'
 import router from '@/router.tsx'
 
 /**
- * @returns {JSX.Element} the `App` component
+ * @returns {JSX.Element} `App` 组件
  */
 export const App = (): JSX.Element => {
   return <RouterProvider router={router} />

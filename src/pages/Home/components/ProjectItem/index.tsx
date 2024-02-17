@@ -11,7 +11,7 @@ export type { ProjectItemProps, ProjectItemRef }
  * @param {ProjectItemProps} props 组件入参
  * @param {ProjectItemProps['imgName']} props.imgName 图片名称
  * @param {ProjectItemProps['details']} props.details 项目信息
- * @param {ProjectItemProps['className']} props.className 样式
+ * @param {ProjectItemProps['className']} [props.className] 组件样式
  * @returns {JSX.Element} `ProjectItem` 组件
  */
 export const ProjectItem = forwardRef<ProjectItemRef, ProjectItemProps>(
@@ -25,7 +25,7 @@ export const ProjectItem = forwardRef<ProjectItemRef, ProjectItemProps>(
         return {
           /**
            * 滚动到当前项目
-           * @param {boolean | ScrollIntoViewOptions | undefined} arg 滚动选项
+           * @param {boolean | ScrollIntoViewOptions | undefined} [arg] 滚动选项
            */
           scrollIntoView(
             arg?: boolean | ScrollIntoViewOptions | undefined

@@ -14,8 +14,9 @@ export type { WorkItemProps }
  * @param {WorkItemProps['jobYears']} props.jobYears 工作年份
  * @param {WorkItemProps['jobPosition']} props.jobPosition 工作岗位
  * @param {WorkItemProps['jobResponsibility']} props.jobResponsibility 工作职责
- * @param {WorkItemProps['relatedProjects']} props.relatedProjects 相关项目
+ * @param {WorkItemProps['relatedProjects']} [props.relatedProjects] 相关项目
  * @param {WorkItemProps['scrollToProject']} props.scrollToProject 滚动到指定项目
+ * @param {WorkItemProps['className']} [props.className] 组件样式
  * @returns {JSX.Element} `WorkItem` 组件
  */
 export const WorkItem = ({

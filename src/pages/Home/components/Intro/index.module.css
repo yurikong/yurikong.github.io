@@ -25,12 +25,12 @@
   padding-inline: var(--padding-inline);
 }
 
-h1 {
+.h1 {
   margin-bottom: 5svh;
   color: var(--text-primary);
 }
 
-h2 {
+.h2 {
   font-weight: normal;
 }
 

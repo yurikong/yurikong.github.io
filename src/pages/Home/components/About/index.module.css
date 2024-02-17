@@ -12,8 +12,14 @@
 }
 
 .p {
+  --margin-block-end: 8svh;
+
   font-size: 1.6rem;
-  margin-block-end: 8svh;
+  margin-block-end: var(--margin-block-end);
+}
+
+.p:last-of-type {
+  margin-block-end: calc(var(--margin-block-end) * 2);
 }
 
 .more {

@@ -22,7 +22,7 @@ export const About = forwardRef<AboutRef, AboutProps>(function About(
     return {
       /**
        * 滚动到该组件
-       * @param {boolean | ScrollIntoViewOptions | undefined} arg 滚动选项
+       * @param {boolean | ScrollIntoViewOptions | undefined} [arg] 滚动选项
        */
       scrollIntoView(arg?: boolean | ScrollIntoViewOptions | undefined): void {
         aboutRef.current?.scrollIntoView(arg)
@@ -36,7 +36,7 @@ export const About = forwardRef<AboutRef, AboutProps>(function About(
       <StickyHeader title='About' />
 
       <div className={style['content']}>
-        {/* 为什么成为前端开发 */}
+        {/* 成为前端开发的理由 */}
         <p className={style['p']}>
           Back in 2018, I transferred from Mt.Sac to CSULB and was lucky enough
           to meet Jimmy Nguyen, who later became my best friend in university.

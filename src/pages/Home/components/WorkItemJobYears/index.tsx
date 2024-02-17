@@ -9,12 +9,12 @@ export type { WorkItemJobYearsProps }
  * 工作年份
  * @param {WorkItemJobYearsProps} props 组件入参
  * @param {WorkItemJobYearsProps['startYear']} props.startYear 开始年份
- * @param {WorkItemJobYearsProps['endYear']} [props.endYear] 结束年份，默认为 `undefined`
+ * @param {WorkItemJobYearsProps['endYear']} [props.endYear] 结束年份
  * @returns {JSX.Element} `WorkItemJobYears` 组件
  */
 export const WorkItemJobYears = ({
   startYear,
-  endYear = undefined,
+  endYear,
 }: WorkItemJobYearsProps): JSX.Element => {
   return (
     <div className={style['work-item-job-years']}>
