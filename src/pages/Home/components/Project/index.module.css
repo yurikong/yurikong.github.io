@@ -1,20 +1,19 @@
 .project {
-  --padding-top: 4svh;
-  --padding-bottom: 15svh;
-
   position: relative;
   min-height: 100svh;
 }
 
 .content {
+  --padding-block-end: 15svh;
+
   position: relative;
-  padding-block: var(--padding-top) var(--padding-bottom);
+  padding-block: 4svh var(--padding-block-end);
   padding-inline: var(--padding-inline);
 }
 
 .more {
   position: absolute;
-  bottom: var(--padding-bottom);
+  bottom: var(--padding-block-end);
   left: 50%;
   transform: translateX(-50%) translateY(100%);
 }

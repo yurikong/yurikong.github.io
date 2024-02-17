@@ -6,7 +6,7 @@
 }
 
 .header {
-  --height: 10svh;
+  --height: 10svh; /* overrides sticky header height */
 
   font-size: 2.4rem;
 }
@@ -17,12 +17,11 @@
 }
 
 .content {
-  --padding-top: 20svh;
-  --padding-bottom: 15svh;
+  --padding-block-end: 15svh;
 
   position: relative;
   flex: auto;
-  padding-block: var(--padding-top) var(--padding-bottom);
+  padding-block: 20svh var(--padding-block-end);
   padding-inline: var(--padding-inline);
 }
 
@@ -37,7 +36,7 @@ h2 {
 
 .more {
   position: absolute;
-  bottom: var(--padding-bottom);
+  bottom: var(--padding-block-end);
   left: 50%;
   transform: translate(-50%, 100%);
 }
