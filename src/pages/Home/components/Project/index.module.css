@@ -11,7 +11,7 @@
   padding-inline: var(--padding-inline);
 }
 
-.more {
+.back-top {
   position: absolute;
   bottom: var(--padding-block-end);
   left: 50%;
