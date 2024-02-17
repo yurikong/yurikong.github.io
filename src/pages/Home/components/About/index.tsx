@@ -38,10 +38,10 @@ export const About = forwardRef<AboutRef, AboutProps>(function About(
       <div className={style['content']}>
         {/* 成为前端开发的理由 */}
         <p className={style['p']}>
-          Back in 2018, I transferred from Mt.Sac to CSULB and was lucky enough
-          to meet Jimmy Nguyen, who later became my best friend in university.
-          We partnered in almost every course project, and his enthusiasm for
-          React sparkled my interest into the front-end realm.
+          Back in 2018, I transferred from Mt.Sac to CSULB and met Jimmy Nguyen,
+          who later became my best friend in university. We partnered in almost
+          every course project, and his constant enthusiasm for React sparkled
+          my interest into the front-end world.
         </p>
 
         {/* 最近的工作重点 */}
