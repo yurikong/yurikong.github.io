@@ -2,13 +2,13 @@ import { type JSX, useRef } from 'react'
 import type { ScrollToRef } from './types'
 import {
   type IntroRef,
+  type AboutRef,
   type WorkRef,
   type ProjectRef,
-  type AboutRef,
   Intro,
+  About,
   Work,
   Project,
-  About,
 } from './components'
 
 /**
@@ -17,9 +17,9 @@ import {
  */
 export const Component = (): JSX.Element => {
   const introRef = useRef<IntroRef | null>(null)
+  const aboutRef = useRef<AboutRef | null>(null)
   const workRef = useRef<WorkRef | null>(null)
   const projectRef = useRef<ProjectRef | null>(null)
-  const aboutRef = useRef<AboutRef | null>(null)
 
   /**
    * 滚动到指定组件
@@ -42,9 +42,17 @@ export const Component = (): JSX.Element => {
       <Intro
         ref={introRef}
         onScrollToRef={() => {
+          scrollToRef(aboutRef)
+        }}
+      />
+
+      <About
+        ref={aboutRef}
+        onScrollToRef={() => {
           scrollToRef(workRef)
         }}
       />
+
       <Work
         ref={workRef}
         onScrollToRef={() => {
@@ -52,13 +60,8 @@ export const Component = (): JSX.Element => {
         }}
         scrollToProject={scrollToProject}
       />
-      <Project
-        ref={projectRef}
-        onScrollToRef={() => {
-          scrollToRef(introRef)
-        }}
-      />
-      <About ref={aboutRef} />
+
+      <Project ref={projectRef} />
     </>
   )
 }
