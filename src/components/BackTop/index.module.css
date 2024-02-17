@@ -14,4 +14,5 @@ button {
   font-size: var(--font-size);
   gap: var(--gap-4);
   line-height: var(--font-size);
+  text-transform: uppercase;
 }
