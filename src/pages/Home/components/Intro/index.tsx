@@ -19,10 +19,15 @@ export const Intro = forwardRef<IntroRef, IntroProps>(function Intro(
 ): JSX.Element {
   const introRef = useRef<HTMLElement | null>(null)
 
+  // 暴露给父组件的方法
   useImperativeHandle(
     ref,
     () => {
       return {
+        /**
+         * 滚动到该组件
+         * @param {boolean | ScrollIntoViewOptions | undefined} arg 滚动选项
+         */
         scrollIntoView(
           arg?: boolean | ScrollIntoViewOptions | undefined
         ): void {
@@ -54,6 +59,7 @@ export const Intro = forwardRef<IntroRef, IntroProps>(function Intro(
         }}
       />
 
+      {/* 内容 */}
       <div className={style['content']}>
         {/* 打招呼 */}
         <h1>Hi, I&apos;m Jack!</h1>
