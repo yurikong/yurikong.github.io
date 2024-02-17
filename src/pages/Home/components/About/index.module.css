@@ -1,3 +1,24 @@
 .about {
-  border: 1px solid red;
+  position: relative;
+  min-height: 100svh;
+}
+
+.content {
+  --padding-block-end: 15svh;
+
+  position: relative;
+  padding-block: 4svh var(--padding-block-end);
+  padding-inline: var(--padding-inline);
+}
+
+.p {
+  font-size: 1.6rem;
+  margin-block-end: 8svh;
+}
+
+.more {
+  position: absolute;
+  bottom: var(--padding-block-end);
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
 }
