@@ -15,19 +15,19 @@ export const AppFooter = (): JSX.Element => {
   const year = new Date().getFullYear()
   const socialLinks: SocialLinkProps[] = [
     {
-      title: 'Email',
-      child: <RiMailLine />,
       href: 'mailto:jackdu2013@163.com',
+      title: 'Email',
+      children: <RiMailLine />,
     },
     {
-      title: 'Github',
-      child: <RiGithubLine />,
       href: 'https://github.com/yurikong',
+      title: 'Github',
+      children: <RiGithubLine />,
     },
     {
-      title: 'Wechat',
-      child: <RiWechatLine />,
       href: '#',
+      title: 'Wechat',
+      children: <RiWechatLine />,
       onClick: (e): void => {
         e.preventDefault()
         // TODO
@@ -56,16 +56,13 @@ export const AppFooter = (): JSX.Element => {
       {/* 应用信息 */}
       <div className={style['info']}>
         <span>Site built with</span>
-        <SocialLink
-          title='React'
-          href='https://react.dev'
-          child={
-            <div className={style['react']}>
-              <RiReactjsLine />
-              <span>React.js</span>
-            </div>
-          }
-        />
+
+        <SocialLink title='React' href='https://react.dev'>
+          <div className={style['react']}>
+            <RiReactjsLine />
+            <span>React.js</span>
+          </div>
+        </SocialLink>
       </div>
     </footer>
   )

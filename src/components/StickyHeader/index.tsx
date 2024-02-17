@@ -7,9 +7,9 @@ export type { StickyHeaderProps }
 /**
  * 吸顶顶栏
  * @param {StickyHeaderProps} props 组件入参
- * @param {StickyHeaderProps['title']} props.title 标题，默认为 `undefined`
- * @param {StickyHeaderProps['slots']} props.slots 具名插槽
- * @param {StickyHeaderProps['className']} props.classNames 样式，默认为 `undefined`
+ * @param {StickyHeaderProps['title']} [props.title] 标题
+ * @param {StickyHeaderProps['slots']} [props.slots] 具名插槽
+ * @param {StickyHeaderProps['className']} [props.classNames] 组件样式
  * @returns {JSX.Element} `StickyHeader` 组件
  */
 export const StickyHeader = ({

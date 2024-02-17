@@ -51,7 +51,7 @@
   gap: var(--gap-2);
 }
 
-.engine::after {
+.react::after {
   position: absolute;
   bottom: 0;
   left: 0;

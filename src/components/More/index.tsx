@@ -7,10 +7,10 @@ export type { MoreProps }
 
 /**
  * 往下更多
- * @param {MoreProps} props component props
- * @param {MoreProps['className']} props.className class applied by parent, default is `undefined`
- * @param {MoreProps['onClick']} props.onClick click handler
- * @returns {JSX.Element} the `More` component
+ * @param {MoreProps} props 组件入参
+ * @param {MoreProps['onClick']} [props.onClick] 处理 `onClick` 事件
+ * @param {MoreProps['className']} [props.className] 组件样式
+ * @returns {JSX.Element} `More` 组件
  */
 export const More = ({ onClick, className = '' }: MoreProps): JSX.Element => {
   const fullClassName = `${style['more']} ${className}`.trim()

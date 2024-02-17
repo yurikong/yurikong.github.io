@@ -1,9 +1,9 @@
-import type { JSX, MouseEventHandler } from 'react'
+import type { MouseEventHandler, ReactNode } from 'react'
 
 export interface SocialLinkProps {
-  title?: string | undefined
-  child: JSX.Element
   href: string
+  title?: string | undefined
+  children?: ReactNode
   onClick?: MouseEventHandler<HTMLAnchorElement> | undefined
   className?: string | undefined
 }

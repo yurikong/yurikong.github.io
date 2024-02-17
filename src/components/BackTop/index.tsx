@@ -8,9 +8,9 @@ export type { BackTopProps }
 
 /**
  * 返回顶部
- * @param {BackTopProps} props component props
- * @param {BackTopProps['className']} props.className parent applied className, default is `undefined`
- * @returns {JSX.Element} the `BackTop` component
+ * @param {BackTopProps} props 组件入参
+ * @param {BackTopProps['className']} [props.className] 组件样式
+ * @returns {JSX.Element} `BackTop` 组件
  */
 export const BackTop = ({ className = '' }: BackTopProps): JSX.Element => {
   const fullClassName = `${style['back-top']} ${className}`.trim()

@@ -10,9 +10,9 @@ export type { AppLinkProps }
 /**
  * 应用链接
  * @param {AppLinkProps} props 组件入参
- * @param {AppLinkProps['external']} [props.external] 是否外部链接，默认 `undefined`
  * @param {AppLinkProps['text']} props.text 显示内容
- * @param {AppLinkProps['to']} [props.to] 链接，当 `external` 为 `true` 时必须传入
+ * @param {AppLinkProps['to']} [props.to] 链接地址，当 `external` 为 `true` 时必须传入
+ * @param {AppLinkProps['external']} [props.external] 是否外部链接
  * @param {AppLinkProps['onClick']} [props.onClick] 处理 `onClick` 事件
  * @returns {JSX.Element} `AppLink` 组件
  */

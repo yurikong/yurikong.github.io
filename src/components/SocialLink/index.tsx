@@ -7,17 +7,17 @@ export type { SocialLinkProps }
 
 /**
  * 社交媒体链接
- * @param {SocialLinkProps} props component props
+ * @param {SocialLinkProps} props 组件入参
  * @param {SocialLinkProps['href']} props.href href
- * @param {SocialLinkProps['child']} props.child child to render
- * @param {SocialLinkProps['title']} props.title title, default is `undefined`
- * @param {SocialLinkProps['onClick']} props.onClick click handler, default is `undefined`
- * @param {SocialLinkProps['className']} props.className parent assigned className, default is `undefined`
- * @returns {JSX.Element} the `SocialLink` component
+ * @param {SocialLinkProps['title']} [props.title] 标题
+ * @param {SocialLinkProps['children']} [props.children] 默认插槽内容
+ * @param {SocialLinkProps['onClick']} [props.onClick] 处理 `onClick` 事件
+ * @param {SocialLinkProps['className']} [props.className] 组件样式
+ * @returns {JSX.Element} `SocialLink` 组件
  */
 export const SocialLink = ({
   title,
-  child,
+  children,
   href,
   onClick,
   className = '',
@@ -33,7 +33,7 @@ export const SocialLink = ({
       title={title}
       onClick={onClick}
     >
-      {child}
+      {children}
     </Link>
   )
 }
