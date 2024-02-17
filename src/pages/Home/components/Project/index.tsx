@@ -49,7 +49,7 @@ export const Project = forwardRef<ProjectRef>(
     return (
       <section className={style['project']} ref={projectRef}>
         {/* 标题 */}
-        <StickyHeader title='Project' />
+        <StickyHeader title='Projects' />
 
         <div className={style['content']}>
           {/* 项目列表 */}
