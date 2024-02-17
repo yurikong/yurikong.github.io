@@ -2,28 +2,26 @@
 
 - Pages
   - [ ] Home
-    - [ ] hero landing
-    - [ ] intro on About (route to About page)
-    - [ ] intro on Projects (route to Projects page)
-    - [ ] intro on Contact (route to Contact page)
-  - [ ] About
-    - [ ] educational
-    - [ ] professional
-    - [ ] recreational
-      - [ ] Travel footprints (map trails)
-      - [ ] Coffee making
-  - [ ] Projects
-    - [ ] SDPC - Sacmi
-    - [ ] digital big screen - Stramo
-    - [ ] big data crm - Stramo
-    - [ ] COA generator - AATS
-    - [ ] Smartchat
-    - [ ] Minesweeper AI
+    - [x] About
+      - [x] why I pick front-end
+      - [x] recent work focus
+      - [x] off-work activities
+    - [x] Work
+      - [x] Sacmi Nanhai
+      - [x] AATS
+      - [x] Stramo
+    - [ ] Projects
+      - [x] Sacmi Digital Printer Client - Sacmi
+      - [x] COA generator - AATS
+      - [x] Digifly - Stramo
+      - [x] Big Data Management Platform - Stramo
+      - [ ] Smartchat
+      - [ ] Minesweeper AI
   - [ ] Contact
-    - [ ] Github
-    - [ ] Email
+    - [x] Github
+    - [x] Email
     - [ ] Wechat
-  - Support
+  - [ ] Support
     - [ ] Buy me a coffee
     - [ ] Paypal
     - [ ] Wechat
