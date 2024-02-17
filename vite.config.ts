@@ -13,6 +13,24 @@ export default defineConfig({
       jsx: 'react',
     }),
   ],
+  build: {
+    rollupOptions: {
+      output: {
+        chunkFileNames: 'js/[name]-[hash].js',
+        entryFileNames: 'js/[name]-[hash].js',
+        assetFileNames(chunkInfo) {
+          const { name = '' } = chunkInfo
+          if (/\.(?:jpe?g|png|gif|svg)$/i.test(name)) {
+            return 'images/[name]-[hash].[ext]'
+          }
+          if (/\.(?:ttf|woff|woff2|eot)$/i.test(name)) {
+            return 'fonts/[name]-[hash].[ext]'
+          }
+          return '[ext]/[name]-[hash].[ext]'
+        },
+      },
+    },
+  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
