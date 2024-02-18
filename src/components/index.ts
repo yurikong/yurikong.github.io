@@ -1,6 +1,8 @@
 export { AppFooter } from './AppFooter'
 export { AppLink, type AppLinkProps } from './AppLink'
+export { AppMenu, type AppMenuProps } from './AppMenu'
 export { BackTop, type BackTopProps } from './BackTop'
+export { Hamburger, type HamburgerProps } from './Hamburger'
 export { Image, type ImageProps } from './Image'
 export { More, type MoreProps } from './More'
 export { SocialLink, type SocialLinkProps } from './SocialLink'

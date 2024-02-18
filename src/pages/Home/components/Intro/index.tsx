@@ -1,7 +1,7 @@
 import { type JSX, forwardRef, useRef, useImperativeHandle } from 'react'
 import type { IntroProps, IntroRef } from './types'
 import { Link } from 'react-router-dom'
-import { StickyHeader, More } from '@/components'
+import { StickyHeader, AppMenu, More } from '@/components'
 import { scrollToTop } from '@/utils'
 import style from './index.module.css'
 
@@ -56,6 +56,7 @@ export const Intro = forwardRef<IntroRef, IntroProps>(function Intro(
               Jack
             </Link>
           ),
+          menu: <AppMenu />,
         }}
       />
 
