@@ -18,6 +18,32 @@
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
 
+  /* TODO: IMPROVEMENTS */
+
+  /* screen sizes */
+
+  /* 480  xs */
+
+  /* 768  sm */
+
+  /* 992  md */
+
+  /* 1200 lg */
+
+  /* 1600 xl */
+
+  /* max content width: 1400 */
+
+  /* vertical rhythm & modular scale */
+
+  /* https://stevenwoodson.com/blog/what-the-font-are-vertical-rhythm-and-modular-scale/ */
+
+  /* https://www.codementor.io/@ricardozea/100-responsive-typography-system-using-a-modular-scale-s5rhft58g */
+
+  /* https://www.modularscale.com/ */
+
+  /* https://www.modularscale.com/?16,1400,36&px&1.618 */
+
   /* common gaps */
   --gap-4: 0.4rem;
   --gap-8: 0.8rem;
