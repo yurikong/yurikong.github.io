@@ -2,7 +2,7 @@
   --height: 8svh;
 
   position: sticky;
-  z-index: 1;
+  z-index: 1000;
   top: 0;
   display: flex;
   height: var(--height);
