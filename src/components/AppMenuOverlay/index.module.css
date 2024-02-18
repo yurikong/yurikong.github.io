@@ -1,0 +1,5 @@
+.app-menu-overlay {
+  position: absolute;
+  z-index: 2000;
+  inset: 0;
+}

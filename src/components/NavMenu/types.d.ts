@@ -1,3 +1,3 @@
-export interface AppMenuProps {
+export interface NavMenuProps {
   className?: string | undefined
 }

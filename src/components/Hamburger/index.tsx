@@ -19,7 +19,12 @@ export const Hamburger = ({
   const divClassName = `${style['hamburger']} ${className}`.trim()
 
   return (
-    <button className={divClassName} onClick={onClick}>
+    <button
+      className={divClassName}
+      type='button'
+      title='Menu'
+      onClick={onClick}
+    >
       <RiMenuLine />
     </button>
   )
