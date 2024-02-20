@@ -1,7 +1,15 @@
-@import url('reset.css');
+/* Modular Scale: 12px 14px 16px, 1.5 @ 16px */
+
+/* Vertical Rhythm: 24px (step by 8px); */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 :root {
-  /* colors */
+  /* Colors */
   --text-primary: #333;
   --text-secondary: #666;
   --text-tertiary: #999;
@@ -11,63 +19,32 @@
   --black: #000;
   --white: #fff;
 
-  /* responsive breakpoints */
-  --breakpoint-xs: 480px;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
+  /* Font Size */
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 24px;
 
-  /* TODO: IMPROVEMENTS */
+  /* Gap */
+  --gap-2xs: 4px;
+  --gap-xs: 8px;
+  --gap-sm: 16px;
+  --gap: 24px;
+  --gap-lg: 32px;
+  --gap-xl: 40px;
+  --gap-2xl: 48px;
 
-  /* screen sizes */
+  /* Responsive Breakpoint */
+  --breakpoint-xs: 576px;
+  --breakpoint-sm: 768px;
+  --breakpoint-md: 992px;
+  --breakpoint-lg: 1200px;
+  --breakpoint-xl: 1600px;
 
-  /* 480  xs */
+  /* Restriction */
+  --max-content-width: 1400px;
 
-  /* 768  sm */
-
-  /* 992  md */
-
-  /* 1200 lg */
-
-  /* 1600 xl */
-
-  /* max content width: 1400 */
-
-  /* vertical rhythm & modular scale */
-
-  /* https://stevenwoodson.com/blog/what-the-font-are-vertical-rhythm-and-modular-scale/ */
-
-  /* https://www.codementor.io/@ricardozea/100-responsive-typography-system-using-a-modular-scale-s5rhft58g */
-
-  /* https://www.modularscale.com/ */
-
-  /* https://www.modularscale.com/?16,1400,36&px&1.618 */
-
-  /* common gaps */
-  --gap-4: 0.4rem;
-  --gap-8: 0.8rem;
-  --gap-12: 1.2rem;
-  --gap-16: 1.6rem;
-  --gap-20: 2rem;
-  --gap-24: 2.4rem;
-  --gap-28: 2.8rem;
-  --gap-32: 3.2rem;
-
-  /* restrictions */
-  --max-content-width: 1200px;
-
-  /* others */
-  --padding-inline: clamp(var(--gap-16), 1.5dvw, var(--gap-32));
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html {
   color-scheme: light dark;
   font-family:
     system-ui,
@@ -86,25 +63,10 @@ html {
     'Apple Color Emoji',
     'Segoe UI Emoji',
     'Segoe UI Symbol';
-  font-size: 62.5%;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
   line-height: 1.5;
   text-rendering: optimizelegibility;
-}
-
-html,
-body,
-#root {
-  min-height: 100svh;
-}
-
-body {
-  color: var(--text-secondary);
-  font-size: 1.4rem;
-}
-
-#root {
-  position: relative;
 }
