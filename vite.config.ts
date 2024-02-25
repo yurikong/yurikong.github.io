@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 import path from 'node:path'
 import Icons from 'unplugin-icons/vite'
+import postcssPresetEnv from 'postcss-preset-env'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -13,6 +14,12 @@ export default defineConfig({
       jsx: 'react',
     }),
   ],
+  css: {
+    postcss: {
+      // @ts-expect-error No overload matches this call.
+      plugins: [postcssPresetEnv()],
+    },
+  },
   build: {
     rollupOptions: {
       output: {
