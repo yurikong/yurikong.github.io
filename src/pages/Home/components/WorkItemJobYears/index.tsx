@@ -12,10 +12,7 @@ export type { WorkItemJobYearsProps }
  * @param {WorkItemJobYearsProps['endYear']} [props.endYear] 结束年份
  * @returns {JSX.Element} `WorkItemJobYears` 组件
  */
-export const WorkItemJobYears = ({
-  startYear,
-  endYear,
-}: WorkItemJobYearsProps): JSX.Element => {
+export const WorkItemJobYears = ({ startYear, endYear }: WorkItemJobYearsProps): JSX.Element => {
   return (
     <div className={style['work-item-job-years']}>
       <div className={style['job-years']}>

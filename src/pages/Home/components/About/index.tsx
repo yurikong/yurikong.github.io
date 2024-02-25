@@ -11,10 +11,7 @@ export type { AboutProps, AboutRef }
  * @param {AboutProps['onScrollToRef']} props.onScrollToRef 处理 `More` 组件的 `onClick`
  * @returns {JSX.Element} `About` 组件
  */
-export const About = forwardRef<AboutRef, AboutProps>(function About(
-  { onScrollToRef },
-  ref
-): JSX.Element {
+export const About = forwardRef<AboutRef, AboutProps>(function About({ onScrollToRef }, ref): JSX.Element {
   const aboutRef = useRef<HTMLElement | null>(null)
 
   // 暴露给父组件的方法
@@ -38,26 +35,23 @@ export const About = forwardRef<AboutRef, AboutProps>(function About(
       <div className={style['content']}>
         {/* 成为前端开发的理由 */}
         <p className={style['p']}>
-          Back in 2018, I transferred from Mt.Sac to CSULB and met Jimmy Nguyen,
-          who later became my best friend in university. We partnered in almost
-          every course project, and his constant enthusiasm for React sparkled
-          my interest into the front-end world.
+          Back in 2018, I transferred from Mt.Sac to CSULB and met Jimmy Nguyen, who later became my best friend in
+          university. We partnered in almost every course project, and his constant enthusiasm for React sparkled my
+          interest into the front-end world.
         </p>
 
         {/* 最近的工作重点 */}
         <p className={style['p']}>
-          Fast-forward to today, I&apos;ve had the privilege to build software
-          for companies ranging from start-ups to industry leading companies. My
-          main focus these days is building a software for digital printing on
-          ceramic tiles at Sacmi Nanhai. In my free time, I try to expand my
-          freelance career to prepare for becoming a Digital Nomad in the
-          future.
+          Fast-forward to today, I&apos;ve had the privilege to build software for companies ranging from start-ups to
+          industry leading companies. My main focus these days is building a software for digital printing on ceramic
+          tiles at Sacmi Nanhai. In my free time, I try to expand my freelance career to prepare for becoming a Digital
+          Nomad in the future.
         </p>
 
         {/* 业余活动 */}
         <p className={style['p']}>
-          When I&apos;m not at the computer, I&apos;m usually hanging out with
-          my wife and daughter, and trying to master the art of coffee making.
+          When I&apos;m not at the computer, I&apos;m usually hanging out with my wife and daughter, and trying to
+          master the art of coffee making.
         </p>
 
         {/* 滚动到下个部分 */}

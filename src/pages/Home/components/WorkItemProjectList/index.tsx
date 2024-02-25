@@ -13,10 +13,7 @@ export type { WorkItemProjectListProps }
  * @param {WorkItemProjectListProps['scrollToProject']} props.scrollToProject 滚动到指定项目
  * @returns {JSX.Element} `WorkItemProjectList` 组件
  */
-export const WorkItemProjectList = ({
-  data,
-  scrollToProject,
-}: WorkItemProjectListProps): JSX.Element => {
+export const WorkItemProjectList = ({ data, scrollToProject }: WorkItemProjectListProps): JSX.Element => {
   return (
     <ul className={style['work-item-project-list']}>
       {data.map<JSX.Element>((item: AppLinkProps, i: number) => {

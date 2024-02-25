@@ -41,12 +41,7 @@ export const WorkItem = ({
       <WorkItemJobResponsibility {...jobResponsibility} />
 
       {/* 关联项目 */}
-      {relatedProjects?.length && (
-        <WorkItemProjectList
-          data={relatedProjects}
-          scrollToProject={scrollToProject}
-        />
-      )}
+      {relatedProjects?.length && <WorkItemProjectList data={relatedProjects} scrollToProject={scrollToProject} />}
     </li>
   )
 }

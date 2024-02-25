@@ -16,12 +16,7 @@ export type { AppLinkProps }
  * @param {AppLinkProps['onClick']} [props.onClick] 处理 `onClick` 事件
  * @returns {JSX.Element} `AppLink` 组件
  */
-export const AppLink = ({
-  external = false,
-  text,
-  to,
-  onClick,
-}: AppLinkProps): JSX.Element => {
+export const AppLink = ({ external = false, text, to, onClick }: AppLinkProps): JSX.Element => {
   return (
     <Link
       className={style['app-link']}

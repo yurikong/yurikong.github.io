@@ -10,10 +10,6 @@ export type { WorkItemJobResponsibilityProps }
  * @param {WorkItemJobResponsibilityProps['responsibility']} props.responsibility 工作职责
  * @returns {JSX.Element} `WorkItemJobResponsibility` 组件
  */
-export const WorkItemJobResponsibility = ({
-  responsibility,
-}: WorkItemJobResponsibilityProps): JSX.Element => {
-  return (
-    <p className={style['work-item-job-responsibility']}>{responsibility}</p>
-  )
+export const WorkItemJobResponsibility = ({ responsibility }: WorkItemJobResponsibilityProps): JSX.Element => {
+  return <p className={style['work-item-job-responsibility']}>{responsibility}</p>
 }

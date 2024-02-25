@@ -9,9 +9,7 @@ import style from './index.module.css'
  * @param {WorkItemListProps['scrollToProject']} props.scrollToProject 滚动到指定项目
  * @returns {JSX.Element} `WorkItemList` 组件
  */
-export const WorkItemList = ({
-  scrollToProject,
-}: WorkItemListProps): JSX.Element => {
+export const WorkItemList = ({ scrollToProject }: WorkItemListProps): JSX.Element => {
   // 工作数据
   const data: WorkItemData[] = [
     {
@@ -90,12 +88,7 @@ export const WorkItemList = ({
   return (
     <ul>
       {data.map<JSX.Element>((item: WorkItemData, i: number) => (
-        <WorkItem
-          className={style['work-item']}
-          key={i}
-          {...item}
-          scrollToProject={scrollToProject}
-        />
+        <WorkItem className={style['work-item']} key={i} {...item} scrollToProject={scrollToProject} />
       ))}
     </ul>
   )

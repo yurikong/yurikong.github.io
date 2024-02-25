@@ -10,9 +10,7 @@ export type { ProjectItemTagStackProps }
  * @param {ProjectItemTagStackProps['data']} props.data 使用的技术栈
  * @returns {JSX.Element} `ProjectItemTechStack` 组件
  */
-export const ProjectItemTechStack = ({
-  data,
-}: ProjectItemTagStackProps): JSX.Element => {
+export const ProjectItemTechStack = ({ data }: ProjectItemTagStackProps): JSX.Element => {
   return (
     <ul className={style['tech-stack']}>
       {data.map<JSX.Element>((text: string, i: number) => (

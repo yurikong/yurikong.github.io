@@ -15,13 +15,7 @@ export type { SocialLinkProps }
  * @param {SocialLinkProps['className']} [props.className] 组件样式
  * @returns {JSX.Element} `SocialLink` 组件
  */
-export const SocialLink = ({
-  title,
-  children,
-  href,
-  onClick,
-  className = '',
-}: SocialLinkProps): JSX.Element => {
+export const SocialLink = ({ title, children, href, onClick, className = '' }: SocialLinkProps): JSX.Element => {
   const linkClassName = `${style['social-link']} ${className}`.trim()
 
   return (

@@ -12,19 +12,11 @@ export type { HamburgerProps }
  * @param {HamburgerProps['className']} [props.className] 组件样式
  * @returns {JSX.Element} `Hamburger` 组件
  */
-export const Hamburger = ({
-  onClick,
-  className = '',
-}: HamburgerProps): JSX.Element => {
+export const Hamburger = ({ onClick, className = '' }: HamburgerProps): JSX.Element => {
   const divClassName = `${style['hamburger']} ${className}`.trim()
 
   return (
-    <button
-      className={divClassName}
-      type='button'
-      title='Menu'
-      onClick={onClick}
-    >
+    <button className={divClassName} type='button' title='Menu' onClick={onClick}>
       <RiMenuLine />
     </button>
   )

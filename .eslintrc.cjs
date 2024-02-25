@@ -34,19 +34,9 @@ module.exports = {
     },
     sourceType: 'module',
   },
-  plugins: [
-    '@typescript-eslint',
-    'react-refresh',
-    'jsx-a11y',
-    'regexp',
-    'promise',
-    'jsdoc',
-  ],
+  plugins: ['@typescript-eslint', 'react-refresh', 'jsx-a11y', 'regexp', 'promise', 'jsdoc'],
   rules: {
-    'react-refresh/only-export-components': [
-      'warn',
-      { allowConstantExport: true },
-    ],
+    'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
     '@typescript-eslint/no-non-null-assertion': 'off',
   },
 }

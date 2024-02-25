@@ -13,11 +13,7 @@ export type { ProjectItemDetailsProps }
  * @param {ProjectItemDetailsProps['techStack']} [props.techStack] 使用技术栈
  * @returns {JSX.Element} `ProjectItemDetails` 组件
  */
-export const ProjectItemDetails = ({
-  name,
-  description,
-  techStack,
-}: ProjectItemDetailsProps): JSX.Element => {
+export const ProjectItemDetails = ({ name, description, techStack }: ProjectItemDetailsProps): JSX.Element => {
   return (
     <div className={style['details']}>
       {/* 项目名称 */}

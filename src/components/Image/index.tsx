@@ -22,9 +22,7 @@ export const Image = ({
   watermarkText = '',
   className = '',
 }: ImageProps): JSX.Element => {
-  const divClassName = `${
-    watermark ? style['watermark'] : ''
-  } ${className}`.trim()
+  const divClassName = `${watermark ? style['watermark'] : ''} ${className}`.trim()
 
   return (
     <div className={divClassName} data-watermark-text={watermarkText}>

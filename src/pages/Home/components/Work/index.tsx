@@ -13,10 +13,7 @@ export type { WorkProps, WorkRef }
  * @param {WorkProps['scrollToProject']} props.scrollToProject 滚动到指定项目
  * @returns {JSX.Element} `Work` 组件
  */
-export const Work = forwardRef<WorkRef, WorkProps>(function Work(
-  { onScrollToRef, scrollToProject },
-  ref
-): JSX.Element {
+export const Work = forwardRef<WorkRef, WorkProps>(function Work({ onScrollToRef, scrollToProject }, ref): JSX.Element {
   const workRef = useRef<HTMLElement | null>(null)
 
   // 暴露给组件的方法
@@ -28,9 +25,7 @@ export const Work = forwardRef<WorkRef, WorkProps>(function Work(
          * 滚动到当前组件
          * @param {boolean | ScrollIntoViewOptions | undefined} [arg] 滚动选项
          */
-        scrollIntoView(
-          arg?: boolean | ScrollIntoViewOptions | undefined
-        ): void {
+        scrollIntoView(arg?: boolean | ScrollIntoViewOptions | undefined): void {
           workRef.current?.scrollIntoView(arg)
         },
       }

@@ -6,8 +6,5 @@ export interface NamedProjectItemRef {
 }
 
 export interface ProjectItemListRef {
-  scrollToProjectItem: (
-    projectName: string,
-    arg?: boolean | ScrollIntoViewOptions | undefined
-  ) => void
+  scrollToProjectItem: (projectName: string, arg?: boolean | ScrollIntoViewOptions | undefined) => void
 }

@@ -12,10 +12,7 @@ export type { WorkItemJobPositionProps }
  * @param {WorkItemJobPositionProps['linkProps']} props.linkProps 公司名称（`AppLink` 组件入参）
  * @returns {JSX.Element} `WorkItemJobPosition` 组件
  */
-export const WorkItemJobPosition = ({
-  jobTitle,
-  linkProps,
-}: WorkItemJobPositionProps): JSX.Element => {
+export const WorkItemJobPosition = ({ jobTitle, linkProps }: WorkItemJobPositionProps): JSX.Element => {
   return (
     <div className={style['work-item-job-position']}>
       {/* 工作岗位 */}

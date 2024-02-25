@@ -1,8 +1,5 @@
 {
-  "src/**/*.{tsx,ts}": [
-    "eslint --fix --report-unused-disable-directives --max-warnings 0",
-    "prettier --write"
-  ],
+  "src/**/*.{tsx,ts}": ["eslint --fix --report-unused-disable-directives --max-warnings 0", "prettier --write"],
   "src/**/*.css": ["stylelint --fix --max-warnings 0", "prettier --write"],
   "**/*.{html,json,md}": ["prettier --write"]
 }

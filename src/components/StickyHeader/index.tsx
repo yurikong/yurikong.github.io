@@ -12,11 +12,7 @@ export type { StickyHeaderProps }
  * @param {StickyHeaderProps['className']} [props.classNames] 组件样式
  * @returns {JSX.Element} `StickyHeader` 组件
  */
-export const StickyHeader = ({
-  title = '',
-  slots,
-  className = '',
-}: StickyHeaderProps): JSX.Element => {
+export const StickyHeader = ({ title = '', slots, className = '' }: StickyHeaderProps): JSX.Element => {
   const headerClassName = `${style['header']} ${className}`.trim()
 
   return (

@@ -1,15 +1,6 @@
 import { type JSX, useRef } from 'react'
 import type { ScrollToRef } from './types'
-import {
-  type IntroRef,
-  type AboutRef,
-  type WorkRef,
-  type ProjectRef,
-  Intro,
-  About,
-  Work,
-  Project,
-} from './components'
+import { type IntroRef, type AboutRef, type WorkRef, type ProjectRef, Intro, About, Work, Project } from './components'
 
 /**
  * 首页
