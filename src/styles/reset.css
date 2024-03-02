@@ -1,24 +1,21 @@
 h1 {
-  font-size: var(--font-size-c2);
+  font-size: var(--font-size-6);
+  margin-block: var(--vr-9);
 }
 
 h2 {
-  font-size: var(--font-size-b2);
+  font-size: var(--font-size-5);
+  margin-block: var(--vr-8);
 }
 
 h3 {
-  font-size: var(--font-size-a-2);
+  font-size: var(--font-size-4);
+  margin-block: var(--vr-7);
 }
 
 p {
-  font-size: var(--font-size-c-1);
-}
-
-h1,
-h2,
-h3,
-p {
-  margin-block: var(--vr-0);
+  font-size: var(--font-size-3);
+  margin-block: var(--vr-6);
 }
 
 a {
