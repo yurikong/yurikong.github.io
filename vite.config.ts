@@ -26,14 +26,15 @@ export default defineConfig({
         chunkFileNames: 'js/[name]-[hash].js',
         entryFileNames: 'js/[name]-[hash].js',
         assetFileNames(chunkInfo) {
+          const filename = '[name]-[hash].[ext]'
           const { name = '' } = chunkInfo
           if (/\.(?:jpe?g|png|gif|svg)$/i.test(name)) {
-            return 'images/[name]-[hash].[ext]'
+            return `images/${filename}`
           }
           if (/\.(?:ttf|woff|woff2|eot)$/i.test(name)) {
-            return 'fonts/[name]-[hash].[ext]'
+            return `fonts/${filename}`
           }
-          return '[ext]/[name]-[hash].[ext]'
+          return `[ext]/${filename}`
         },
       },
     },
