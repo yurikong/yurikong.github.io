@@ -12,14 +12,20 @@
 
 :root {
   /* Colors */
-  --text-primary: #333;
+
+  /* --text-primary: #333;
   --text-secondary: #666;
   --text-tertiary: #999;
   --border: #dcdfe6;
   --border-light: #e4e7ed;
   --border-dark: #d4d7de;
   --black: #000;
-  --white: #fff;
+  --white: #fff; */
+
+  /* --off-white: #f7f1f0;
+  --border-1: #c3a6a0;
+  --brown: #a15c38;
+  --bk: #262220; */
 
   /* Line Height */
   --line-height-normal: 1.5;
@@ -81,4 +87,5 @@
   font-weight: var(--font-weight-normal);
   line-height: var(--line-height-normal);
   text-rendering: optimizelegibility;
+  text-size-adjust: 100%;
 }

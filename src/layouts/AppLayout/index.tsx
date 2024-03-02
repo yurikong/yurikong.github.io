@@ -1,6 +1,10 @@
 import type { JSX } from 'react'
 import { Outlet } from 'react-router-dom'
-import { AppFooter, BottomBanner, AppMenuOverlay } from '@/components'
+import {
+  AppFooter,
+  // BottomBanner,
+  //  AppMenuOverlay
+} from '@/components'
 
 /**
  * 布局
@@ -15,9 +19,9 @@ export const AppLayout = (): JSX.Element => {
 
       <AppFooter />
 
-      <BottomBanner />
+      {/* <BottomBanner /> */}
 
-      <AppMenuOverlay />
+      {/* <AppMenuOverlay /> */}
     </>
   )
 }
