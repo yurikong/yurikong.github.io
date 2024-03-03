@@ -1,0 +1,9 @@
+.intro {
+  min-height: 100svh;
+  padding-block: 25svh var(--sp-base);
+  padding-inline: var(--sp-base);
+}
+
+.intro > h1 {
+  text-transform: uppercase;
+}
