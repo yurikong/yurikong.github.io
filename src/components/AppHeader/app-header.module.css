@@ -10,7 +10,7 @@
   justify-content: space-between;
 }
 
-.app-header > .logo {
+.logo {
   font-size: var(--font-size-6);
   font-weight: var(--font-weight-bold);
   line-height: var(--app-header-height);
@@ -18,7 +18,7 @@
   text-transform: uppercase;
 }
 
-.app-header > .hamburger {
+.hamburger {
   height: 100%;
   font-size: var(--font-size-6);
   padding-inline: var(--vr-4);

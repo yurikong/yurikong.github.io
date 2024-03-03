@@ -1,13 +1,13 @@
 import type { JSX } from 'react'
 import RiMenuLine from '~icons/ri/menu-line'
-import './hamburger.css'
+import style from './hamburger.module.css'
 
 interface Props {
   className?: string | undefined
 }
 
 export const Hamburger = ({ className = '' }: Props): JSX.Element => {
-  const elClassName = `hamburger ${className}`.trim()
+  const elClassName = `${style['hamburger']} ${className}`.trim()
 
   return (
     <i className={elClassName}>
