@@ -1,7 +1,6 @@
 /*
 * Typesetting
-* Modular Scale: 12px 14px 16px, 1.5 @ 16px
-* Vertical Rhythm: 24px (step by 4px)
+* Modular Scale: https://www.modularscale.com/?16,1044&px&1.333
 */
 
 :root {
@@ -21,9 +20,6 @@
   --brown: #a15c38;
   --bk: #262220; */
 
-  /* Line Height */
-  --line-height-normal: 1.5;
-
   /* Font Weight */
   --font-weight-normal: 400;
   --font-weight-semi: 600;
@@ -34,34 +30,43 @@
     'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei UI', 'Microsoft YaHei', sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol';
 
-  /* Font Size (Modular Scale) */
-  --font-size-1: 0.75rem; /* 12px @ 16px */
-  --font-size-2: 0.875rem; /* 14px @ 16px */
-  --font-size-3: 1rem; /* 16px @ 16px */
-  --font-size-4: 1.125rem; /* 18px @ 16px */
-  --font-size-5: 1.3125rem; /* 21px @ 16px */
-  --font-size-6: 1.5rem; /* 24px @ 16px */
-  --font-size-7: 1.6875rem; /* 27px @ 16px */
-  --font-size-8: 1.9688rem; /* 31.5px @ 16px */
-  --font-size-9: 2.25rem; /* 36px @ 16px */
+  /* Line Height */
+  --line-height-normal: 1.333;
 
-  /* Space (Vertical Rhythm) */
-  --vr-1: 0.25rem; /* 4px @ 16px */
-  --vr-2: 0.5rem; /* 8px @ 16px */
-  --vr-3: 0.75rem; /* 12px @ 16px */
-  --vr-4: 1rem; /* 16px @ 16px */
-  --vr-5: 1.25rem; /* 20px @ 16px */
-  --vr-6: 1.5rem; /* 24px @ 16px */
-  --vr-7: 1.75rem; /* 28px @ 16px */
-  --vr-8: 2rem; /* 32px @ 16px */
-  --vr-9: 2.25rem; /* 36px @ 16px */
+  /* Modular Scale */
+  --ms-minus-2: 0.75rem; /* 12.003px @ 16px */
+  --ms-minus-1: 0.875rem; /* 14.004px @ 16px */
+  --ms-0: 1rem; /* 16px @ 16px */
+  --ms-1: 1.167rem; /* 18.667px @ 16px */
+  --ms-2: 1.333rem; /* 21.328px @ 16px */
+  --ms-3: 1.555rem; /* 24.883px @ 16px */
+  --ms-4: 1.777rem; /* 28.43px @ 16px */
+  --ms-5: 2.073rem; /* 33.169px @ 16px */
+  --ms-6: 2.369rem; /* 37.897 @ 16px */
+
+  /* Vertical Rhythm */
+  --vr-0: calc(var(--line-height-normal) * 1rem);
+  --vr-1: calc(var(--vr-0) * 2);
+  --vr-2: calc(var(--vr-0) * 3);
+  --vr-3: calc(var(--vr-0) * 4);
+
+  /* Space */
+  --sp-1: 0.25rem; /* 4px @ 16px */
+  --sp-2: 0.5rem; /* 8px @ 16px */
+  --sp-3: 0.75rem; /* 12px @ 16px */
+  --sp-4: 1rem; /* 16px @ 16px */
+  --sp-5: 1.25rem; /* 20px @ 16px */
+  --sp-6: 1.5rem; /* 24px @ 16px */
+  --sp-7: 1.75rem; /* 28px @ 16px */
+  --sp-8: 2rem; /* 32px @ 16px */
+  --sp-9: 2.25rem; /* 36px @ 16px */
 
   /* Responsive Breakpoint (Tailwind) */
-  --breakpoint-sm: 640px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 1024px;
-  --breakpoint-xl: 1280px;
-  --breakpoint-2xl: 1536px;
+  --xs: 640px;
+  --sm: 768px;
+  --md: 1024px;
+  --lg: 1280px;
+  --xlg: 1536px;
 
   /* Restriction */
   --max-content-width: 1400px;
