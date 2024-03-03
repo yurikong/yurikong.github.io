@@ -11,15 +11,15 @@
 }
 
 .logo {
-  font-size: var(--ms-3);
+  font-size: var(--fs-xl);
   font-weight: var(--font-weight-bold);
   line-height: var(--app-header-height);
-  padding-inline: var(--sp-4);
+  padding-inline: var(--sp-base);
   text-transform: uppercase;
 }
 
 .hamburger {
   height: 100%;
-  font-size: var(--ms-3);
-  padding-inline: var(--sp-4);
+  font-size: var(--fs-xl);
+  padding-inline: var(--sp-base);
 }
