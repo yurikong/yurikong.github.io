@@ -1,6 +1,0 @@
-.hamburger {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-inline: var(--padding-inline);
-}

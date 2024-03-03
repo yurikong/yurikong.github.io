@@ -1,6 +1,11 @@
 import type { JSX } from 'react'
-import './app-main.css'
+import { Outlet } from 'react-router-dom'
+import style from './app-main.module.css'
 
 export const AppMain = (): JSX.Element => {
-  return <main className='app-main'>App Main</main>
+  return (
+    <main className={style['app-main']}>
+      <Outlet />
+    </main>
+  )
 }

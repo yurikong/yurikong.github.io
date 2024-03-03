@@ -1,9 +1,0 @@
-.work-item-job-position {
-  display: flex;
-  align-items: center;
-  color: var(--text-secondary);
-  font-size: 1.6rem;
-  font-weight: bold;
-  gap: var(--gap-4);
-  text-transform: capitalize;
-}
