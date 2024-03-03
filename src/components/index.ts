@@ -1,11 +1,16 @@
-export { AppFooter } from './AppFooter'
+// export { AppFooter } from './AppFooter'
 export { AppLink, type AppLinkProps } from './AppLink'
 export { AppMenuOverlay, type AppMenuOverlayProps } from './AppMenuOverlay'
 export { BackTop, type BackTopProps } from './BackTop'
 export { BottomBanner, type BottomBannerProps } from './BottomBanner'
-export { Hamburger, type HamburgerProps } from './Hamburger'
 export { Image, type ImageProps } from './Image'
 export { More, type MoreProps } from './More'
 export { NavMenu, type NavMenuProps } from './NavMenu'
 export { SocialLink, type SocialLinkProps } from './SocialLink'
 export { StickyHeader, type StickyHeaderProps } from './StickyHeader'
+
+// new:
+export { AppHeader } from './AppHeader/app-header.tsx'
+export { AppMain } from './AppMain/app-main.tsx'
+export { AppFooter } from './AppFooter/app-footer.tsx'
+export { Hamburger } from './Hamburger/hamburger.tsx'

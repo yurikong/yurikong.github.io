@@ -1,29 +1,14 @@
 import { createBrowserRouter } from 'react-router-dom'
-import { AppLayout } from '@/layouts'
 
-const router = createBrowserRouter([
+export const router = createBrowserRouter([
   {
     path: '/',
-    element: <AppLayout />,
+    lazy: async () => await import('@/layouts/AppLayout/app-layout.tsx'),
     children: [
       {
         index: true,
-        lazy: () => import('@/pages/Home'),
-      },
-      {
-        path: 'about',
-        lazy: () => import('@/pages/About'),
-      },
-      {
-        path: 'work',
-        lazy: () => import('@/pages/Work'),
-      },
-      {
-        path: 'contact',
-        lazy: () => import('@/pages/Contact'),
+        lazy: async () => await import('@/pages/Home'),
       },
     ],
   },
 ])
-
-export default router

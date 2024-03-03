@@ -1,0 +1,25 @@
+.app-header {
+  position: fixed;
+  z-index: 5000;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: var(--app-header-height);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-header > .logo {
+  font-size: var(--font-size-6);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--app-header-height);
+  padding-inline: var(--vr-4);
+  text-transform: uppercase;
+}
+
+.app-header > .hamburger {
+  height: 100%;
+  font-size: var(--font-size-6);
+  padding-inline: var(--vr-4);
+}
