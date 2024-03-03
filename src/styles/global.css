@@ -1,27 +1,6 @@
-/*
-* Typesetting
-* Modular Scale: https://www.modularscale.com/?16,1044&px&1.333
-*/
-
 :root {
-  /* Colors */
-
-  /* --text-primary: #333;
-  --text-secondary: #666;
-  --text-tertiary: #999;
-  --border: #dcdfe6;
-  --border-light: #e4e7ed;
-  --border-dark: #d4d7de;
-  --black: #000;
-  --white: #fff; */
-
-  /* --off-white: #f7f1f0;
-  --border-1: #c3a6a0;
-  --brown: #a15c38;
-  --bk: #262220; */
-
   /* Font Weight */
-  --font-weight-normal: 400;
+  --font-weight-base: 400;
   --font-weight-semi: 600;
   --font-weight-bold: 700;
 
@@ -31,35 +10,30 @@
     'Segoe UI Emoji', 'Segoe UI Symbol';
 
   /* Line Height */
-  --line-height-normal: 1.333;
+  --line-height-base: 1.5;
 
-  /* Modular Scale */
-  --ms-minus-2: 0.75rem; /* 12.003px @ 16px */
-  --ms-minus-1: 0.875rem; /* 14.004px @ 16px */
-  --ms-0: 1rem; /* 16px @ 16px */
-  --ms-1: 1.167rem; /* 18.667px @ 16px */
-  --ms-2: 1.333rem; /* 21.328px @ 16px */
-  --ms-3: 1.555rem; /* 24.883px @ 16px */
-  --ms-4: 1.777rem; /* 28.43px @ 16px */
-  --ms-5: 2.073rem; /* 33.169px @ 16px */
-  --ms-6: 2.369rem; /* 37.897 @ 16px */
-
-  /* Vertical Rhythm */
-  --vr-0: calc(var(--line-height-normal) * 1rem);
-  --vr-1: calc(var(--vr-0) * 2);
-  --vr-2: calc(var(--vr-0) * 3);
-  --vr-3: calc(var(--vr-0) * 4);
+  /* Font Size */
+  --fs-2xs: 0.625rem; /* 10px @ 16px */
+  --fs-xs: 0.75rem; /* 12px @ 16px */
+  --fs-sm: 0.875rem; /* 14px @ 16px */
+  --fs-base: 1rem; /* 16px @ 16px */
+  --fs-md: 1.125rem; /* 18px @ 16px */
+  --fs-lg: 1.3125rem; /* 21px @ 16px */
+  --fs-xl: 1.5rem; /* 24px @ 16px */
+  --fs-2xl: 1.6875rem; /* 27px @ 16px */
+  --fs-3xl: 1.9688rem; /* 31.5px @ 16px */
+  --fs-4xl: 2.25rem; /* 36 @ 16px */
 
   /* Space */
-  --sp-1: 0.25rem; /* 4px @ 16px */
-  --sp-2: 0.5rem; /* 8px @ 16px */
-  --sp-3: 0.75rem; /* 12px @ 16px */
-  --sp-4: 1rem; /* 16px @ 16px */
-  --sp-5: 1.25rem; /* 20px @ 16px */
-  --sp-6: 1.5rem; /* 24px @ 16px */
-  --sp-7: 1.75rem; /* 28px @ 16px */
-  --sp-8: 2rem; /* 32px @ 16px */
-  --sp-9: 2.25rem; /* 36px @ 16px */
+  --sp-2xs: 0.25rem; /* 4px @ 16px */
+  --sp-xs: 0.5rem; /* 8px @ 16px */
+  --sp-sm: 0.75rem; /* 12px @ 16px */
+  --sp-base: 1rem; /* 16px @ 16px */
+  --sp-md: 1.25rem; /* 20px @ 16px */
+  --sp-lg: 1.5rem; /* 24px @ 16px */
+  --sp-xl: 1.75rem; /* 28px @ 16px */
+  --sp-2xl: 2rem; /* 32px @ 16px */
+  --sp-3xl: 2.25rem; /* 36px @ 16px */
 
   /* Responsive Breakpoint (Tailwind) */
   --xs: 640px;
@@ -83,8 +57,8 @@
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: var(--font-weight-normal);
-  line-height: var(--line-height-normal);
+  font-weight: var(--font-weight-base);
+  line-height: var(--line-height-base);
   text-rendering: optimizelegibility;
   text-size-adjust: 100%;
 }
