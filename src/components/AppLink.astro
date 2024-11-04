@@ -1,0 +1,74 @@
+---
+interface Props {
+  url?: string | undefined
+  showPrefixIcon?: boolean | undefined
+  prefixIconClassName?: string | undefined
+  showSuffixIcon?: boolean | undefined
+  suffixIconClassName?: string | undefined
+  title?: string | undefined
+  class?: string | undefined
+}
+
+let url: string = Astro.props.url || "#"
+const showPrefixIcon: boolean = Astro.props.showPrefixIcon ?? false
+const prefixIconClassName: string = Astro.props.prefixIconClassName || "i-ri:links-line"
+const showSuffixIcon: boolean = Astro.props.showSuffixIcon ?? false
+const suffixIconClassName: string = Astro.props.suffixIconClassName || "i-ri:external-link-line"
+const title: string | undefined = Astro.props.title || undefined
+const className: string | undefined = Astro.props.class || undefined
+
+const isInternal: boolean = url.startsWith("#") || url.startsWith("/")
+---
+
+<app-link class:list={[className]} data-url={url}>
+  <a
+    class:list={[{ "cursor-default": url === "#" }]}
+    href={url}
+    target={isInternal ? null : "_blank"}
+    rel={isInternal ? null : "noopener noreferrer"}
+    title={title}
+  >
+    <!-- Prefix Icon -->
+    {showPrefixIcon && <i class:list={[prefixIconClassName, "align-top"]} />}
+
+    <!-- Text -->
+    <slot />
+
+    <!-- Suffix Icon -->
+    {showSuffixIcon && <i class:list={[suffixIconClassName, "align-top"]} />}
+  </a>
+</app-link>
+
+<script>
+  class AppLink extends HTMLElement {
+    connectedCallback(): void {
+      //
+      // Set `height` of <i> equal to `lineHeight` of <app-link>
+      //
+      const lineHeight: CSSStyleValue | undefined = this.computedStyleMap().get("line-height")
+      if (lineHeight !== undefined) {
+        const { value: lineHeightValue, unit: lineHeightUnit } = lineHeight as CSSUnitValue
+
+        this.querySelectorAll("i").forEach((el) => {
+          let h: string
+          if (lineHeightUnit === "number") {
+            h = `${lineHeightValue}em`
+          } else {
+            h = lineHeight.toString()
+          }
+          el.style.setProperty("height", h)
+        })
+      }
+
+      const url: string = this.dataset.url!
+      const a: HTMLAnchorElement | null = this.querySelector("a")
+      a?.addEventListener("click", (evt: MouseEvent): void => {
+        if (url === "#" || url === "") {
+          evt.preventDefault()
+        }
+      })
+    }
+  }
+
+  customElements.define("app-link", AppLink)
+</script>

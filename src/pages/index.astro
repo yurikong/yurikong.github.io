@@ -1,0 +1,26 @@
+---
+import HeadIcons from "~components/HeadIcons.astro"
+import HeadMetaEn from "~components/en/HeadMeta.astro"
+
+const redirectMessage: string = "redirecting..."
+---
+
+<html lang="en">
+  <title>{redirectMessage}</title>
+  <HeadMetaEn />
+  <HeadIcons />
+  <body>{redirectMessage}</body>
+</html>
+
+<script>
+  import { type TLocale, getLocale, setLocale } from "~/i18n"
+
+  const locale: TLocale = getLocale()
+  setLocale(locale)
+  let url: string = window.location.href
+  if (!url.endsWith("/")) {
+    url += "/"
+  }
+  url += locale
+  window.location.href = url
+</script>
