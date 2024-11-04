@@ -10,7 +10,7 @@ export default defineConfig({
     defaultStrategy: "viewport",
   },
   site: "https://yurikong.github.io",
-  base: "/astro-resume-minimalist",
+  base: "/",
   server: {
     open: true,
   },

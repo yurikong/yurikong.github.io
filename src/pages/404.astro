@@ -17,8 +17,6 @@ const redirectMessage: string = "redirecting..."
 
   const locale: TLocale = getLocale()
   setLocale(locale)
-  const tokens: string[] = window.location.href.split(import.meta.env.BASE_URL, 1)
-  tokens.push(`/${locale}/404`)
-  const url: string = tokens.join(import.meta.env.BASE_URL)
+  const url: string = `${window.location.origin}/${locale}/404`
   window.location.href = url
 </script>
