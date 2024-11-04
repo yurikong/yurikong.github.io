@@ -34,7 +34,7 @@ import { getRelativeLocaleUrl } from "astro:i18n"
       "md:mb-24",
       "leading-tight",
       "tracking-widest",
-      "lowercase",
+      "capitalize",
       "text-gray-800",
       "dark:text-gray-300",
       "bg-gray-100",
@@ -42,8 +42,8 @@ import { getRelativeLocaleUrl } from "astro:i18n"
     ]}
   >
     <AppLink url={getRelativeLocaleUrl("en")}>
-      <span class:list={["hidden", "sm:inline"]}>astro resume</span>
-      <span>minimalist</span>
+      <span class:list={["hidden", "sm:inline"]}>Jianqiang Du's</span>
+      <span>portfolio</span>
     </AppLink>
   </header>
 
